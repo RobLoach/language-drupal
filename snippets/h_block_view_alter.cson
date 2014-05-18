@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_block_view_alter':
+    'prefix': 'h_block_view_alter'
+    'body': '/**\n * Implements hook_block_view_alter().\n */\nfunction $1_block_view_alter(&\$data, \$block) {\n  ${1:/* Your code here */}\n}'

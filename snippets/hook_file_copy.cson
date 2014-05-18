@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_file_copy':
+    'prefix': 'hook_file_copy'
+    'body': '/**\n * Implements hook_file_copy().\n */\nfunction $1_file_copy(\$file, \$source) {\n  ${1:/* Your code here */}\n}'

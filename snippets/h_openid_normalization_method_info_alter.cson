@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_openid_normalization_method_info_alter':
+    'prefix': 'h_openid_normalization_method_info_alter'
+    'body': '/**\n * Implements hook_openid_normalization_method_info_alter().\n */\nfunction $1_openid_normalization_method_info_alter(&\$methods) {\n  ${1:/* Your code here */}\n}'

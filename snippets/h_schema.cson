@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_schema':
+    'prefix': 'h_schema'
+    'body': '/**\n * Implements hook_schema().\n */\nfunction $1_schema() {\n  \$schema[\'${1}\'] = array(\n    \'description\' => \'${2}\',\n    \'fields\' => array(\n      \'${3}\' => array(\n        \'description\' => \'${4}\',\n        \'type\' => \'${5}\',\n        \'unsigned\' => ${6},\n        \'not null\' => ${7},\n        \'default\' => ${8},\n\t\t\t),\n\t\t),\n    \'indexes\' => array(\n      \'${9}\' => array(\'${10}\'),\n\t\t),\n    \'unique keys\' => array(\n      \'${11}\' => array(\'${12}\')\n\t\t),\n    \'foreign keys\' => array(\n      \'${13}\' => array(\n        \'table\' => \'${14}\',\n        \'columns\' => array(\'${15}\' => \'${16}\'),\n\t\t\t),\n\t\t),\n    \'primary key\' => array(\'${17}\'),\n  );\n  return \$schema;\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_user_presave':
+    'prefix': 'h_user_presave'
+    'body': '/**\n * Implements hook_user_presave().\n */\nfunction $1_user_presave(&\$edit, \$account, \$category) {\n  ${1:/* your code here */}\n}'

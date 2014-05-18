@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_storage_purge':
+    'prefix': 'hook_field_storage_purge'
+    'body': '/**\n * Implements hook_field_storage_purge().\n */\nfunction $1_field_storage_purge(\$entity_type, \$entity, \$field, \$instance) {\n  list(\$id, \$vid, \$bundle) = entity_extract_ids(\$entity_type, \$entity);\n  /*\n   *\$etid = _field_sql_storage_etid(\$entity_type);\n   *\n   *\$table_name = _field_sql_storage_tablename(\$field);\n   *\$revision_name = _field_sql_storage_revision_tablename(\$field);\n   *db_delete(\$table_name)\n   *  ->condition(\'etid\', \$etid)\n   *  ->condition(\'entity_id\', \$id)\n   *  ->execute();\n   *db_delete(\$revision_name)\n   *  ->condition(\'etid\', \$etid)\n   *  ->condition(\'entity_id\', \$id)\n   *  ->execute();\n   */\n  ${1:/* Your code here */}\n}'

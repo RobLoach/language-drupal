@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_process':
+    'prefix': 'h_process'
+    'body': '/**\n * Implements hook_process().\n */\nfunction $1_process(&\$variables, \$hook) {\n  ${1:/* Your code here */}\n}'

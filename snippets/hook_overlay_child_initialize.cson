@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_overlay_child_initialize':
+    'prefix': 'hook_overlay_child_initialize'
+    'body': '/**\n * Implements hook_overlay_child_initialize().\n */\nfunction $1_overlay_child_initialize() {\n  // Add our custom JavaScript.\n  /*\n   *drupal_add_js(drupal_get_path(\'module\', \'hook\') . \'/hook-overlay-child.js\');\n   */\n  ${1:/* Your code here */}\n}'

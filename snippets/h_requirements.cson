@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_requirements':
+    'prefix': 'h_requirements'
+    'body': '/**\n * Implements hook_requirements().\n */\nfunction $1_requirements(\$phase) {\n  \$requirements = array();\n  ${1:/* Your code here */}\n\n  return \$requirements;\n}'

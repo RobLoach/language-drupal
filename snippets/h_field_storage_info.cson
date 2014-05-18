@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_storage_info':
+    'prefix': 'h_field_storage_info'
+    'body': '/**\n * Implements hook_field_storage_info().\n */\nfunction $1_field_storage_info() {\n  return array(\n    \'${1}\' => array(\n      \'label\' => t(\'${2}\'),\n      \'description\' => t(\'${3}\'),\n      \'settings\' => array(\'${4}\'${5}),\n    ),\n  );\n}'

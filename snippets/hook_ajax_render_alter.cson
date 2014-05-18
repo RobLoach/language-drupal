@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_ajax_render_alter':
+    'prefix': 'hook_ajax_render_alter'
+    'body': '/**\n * Implements hook_ajax_render_alter().\n */\nfunction $1_ajax_render_alter(\$commands) {\n  // Inject any new status messages into the content area.\n  /*\n   *\$commands[] = ajax_command_prepend(\'#block-system-main .content\', theme(\'status_messages\'));\n   */\n  \$commands[] = ${1}\n}'

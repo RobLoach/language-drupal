@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_info':
+    'prefix': 'hook_field_info'
+    'body': '/**\n * Implements hook_field_info().\n */\nfunction $1_field_info() {\n  return array(\n    /*\n     *\'text\' => array(\n     *  \'label\' => t(\'Text\'),\n     *  \'description\' => t(\'This field stores varchar text in the database.\'),\n     *  \'settings\' => array(\'max_length\' => 255),\n     *  \'instance_settings\' => array(\'text_processing\' => 0),\n     *  \'default_widget\' => \'text_textfield\',\n     *  \'default_formatter\' => \'text_default\',\n     *),\n     */\n    \'${1}\' => array(\n      \'label\' => t(\'${2}\'),\n      \'description\' => t(\'${3}\'),\n      \'settings\' => array(\'${4}\' => ${5}),\n      \'instance_settings\' => array(\'${6}\' => ${7}),\n      \'default_widget\' => \'${8}\',\n      \'default_formatter\' => \'${9}\',\n    ),\n  );\n}'

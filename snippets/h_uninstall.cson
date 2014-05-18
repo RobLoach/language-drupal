@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_uninstall':
+    'prefix': 'h_uninstall'
+    'body': '/**\n * Implements hook_uninstall().\n */\nfunction $1_uninstall() {\n  variable_del(\'${1}\');\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_node_access_records_alter':
+    'prefix': 'hook_node_access_records_alter'
+    'body': '/**\n * Implements hook_node_access_records_alter().\n */\nfunction $1_node_access_records_alter(&\$grants, \$node) {\n  // Our module allows editors to mark specific articles with the \'is_preview\'\n  // field. If the node being saved has a TRUE value for that field, then only\n  // our grants are retained, and other grants are removed. Doing so ensures\n  // that our rules are enforced no matter what priority other grants are given.\n  /*\n   *if (\$node->is_preview) {\n   *  // Our module grants are set in \$grants[\'example\'].\n   *  \$temp = \$grants[\'example\'];\n   *  // Now remove all module grants but our own.\n   *  \$grants = array(\'example\' => \$temp);\n   *}\n   */\n  ${1:/* Your code here */}\n}'

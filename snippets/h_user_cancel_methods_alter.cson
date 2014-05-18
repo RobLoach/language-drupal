@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_user_cancel_methods_alter':
+    'prefix': 'h_user_cancel_methods_alter'
+    'body': '/**\n * Implements hook_user_cancel_methods_alter().\n */\nfunction $1_user_cancel_methods_alter(&\$methods) {\n   \$methods[\'${1}\']${2}\n}'

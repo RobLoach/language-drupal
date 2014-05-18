@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_entity_info':
+    'prefix': 'h_entity_info'
+    'body': '/**\n * Implements hook_entity_info().\n */\nfunction $1_entity_info() {\n    \'${1}\' => array(\n      \'label\' => t(\'${2}\'),\n      \'controller class\' => \'${3}\',\n      \'base table\' => \'${4}\',\n      \'revision table\' => \'${5}\',\n      \'uri callback\' => \'${6}\',\n      \'fieldable\' => ${7},\n      \'translation\' => array(\n        \'locale\' => ${8},\n      ),\n      \'entity keys\' => array(\n        \'id\' => \'${9}\',\n        \'revision\' => \'${10}\',\n        \'bundle\' => \'${11}\',\n      ),\n      \'bundle keys\' => array(\n        \'bundle\' => \'${12}\',\n      ),\n      \'bundles\' => array(),\n      \'view modes\' => array(\n        \'${13}\' => array(\n          \'label\' => t(\'${14}\'),\n          \'custom settings\' => ${15},\n        ),\n      ),\n    ),\n  );\n  return \$return;\n}'

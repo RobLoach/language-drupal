@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_block_configure':
+    'prefix': 'hook_block_configure'
+    'body': '/**\n * Implements hook_block_configure().\n */\nfunction $1_block_configure(\$delta = \'\') {\n  // This example comes from node.module.\n  /*\n   *\$form = array();\n   *if (\$delta == \'recent\') {\n   *  \$form[\'node_recent_block_count\'] = array(\n   *    \'#type\' => \'select\',\n   *    \'#title\' => t(\'Number of recent content items to display\'),\n   *    \'#default_value\' => variable_get(\'node_recent_block_count\', 10),\n   *    \'#options\' => drupal_map_assoc(array(2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 25, 30)),\n   *  );\n   *}\n   */\n  \$form = array();\n  if (\$delta == \'${1}\') {\n    \$form[\'${2}\']${3} = array(\n      \'#type\' => \'${4}\',\n      \'#title\' => t(\'${5}\'),\n      \'#default_value\' => variable_get(\'${6}\', ${7}),${8}\n    );\n  }\n  return \$form;\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_element_info_alter':
+    'prefix': 'h_element_info_alter'
+    'body': '/**\n * Implements hook_element_info_alter().\n */\nfunction $1_element_info_alter(&\$type) {\n  if (isset(\$type[\'${1}\'])) {\n    \$type[\'${2}\'] = ${3};\n  }\n}'

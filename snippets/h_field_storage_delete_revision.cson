@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_storage_delete_revision':
+    'prefix': 'h_field_storage_delete_revision'
+    'body': '/**\n * Implements hook_field_storage_delete_revision().\n */\nfunction $1_field_storage_delete_revision(\$entity_type, \$entity, \$fields) {\n  list(\$id, \$vid, \$bundle) = entity_extract_ids(\$entity_type, \$entity);\n  \$etid = _field_sql_storage_etid(\$entity_type);\n\n  if (isset(\$vid)) {\n    foreach (\$fields as \$field_id) {\n      ${1:/* Your code here */}\n    }\n  }\n}'

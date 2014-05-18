@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_attach_delete_bundle':
+    'prefix': 'h_field_attach_delete_bundle'
+    'body': '/**\n * Implements hook_field_attach_delete_bundle().\n */\nfunction $1_field_attach_delete_bundle(\$entity_type, \$bundle, \$instances) {\n  ${1:/* Your code here */}\n}'

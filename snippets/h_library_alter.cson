@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_library_alter':
+    'prefix': 'h_library_alter'
+    'body': '/**\n * Implements hook_library_alter().\n */\nfunction $1_library_alter(&\$libraries, \$module) {\n  ${1:/* Your code here */}\n}'

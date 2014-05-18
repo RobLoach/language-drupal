@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_filter_format_insert':
+    'prefix': 'hook_filter_format_insert'
+    'body': '/**\n * Implements hook_filter_format_insert().\n */\nfunction $1_filter_format_insert(\$format) {\n  /*\n   *mymodule_cache_rebuild();\n   */\n  ${1:/* Your code here */}\n}'

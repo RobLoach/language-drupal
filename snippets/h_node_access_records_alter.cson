@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_node_access_records_alter':
+    'prefix': 'h_node_access_records_alter'
+    'body': '/**\n * Implements hook_node_access_records_alter().\n */\nfunction $1_node_access_records_alter(&\$grants, \$node) {\n  ${1:/* Your code here */}\n}'

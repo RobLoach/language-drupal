@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_available_languages_alter':
+    'prefix': 'hook_field_available_languages_alter'
+    'body': '/**\n * Implements hook_field_available_languages_alter().\n */\nfunction $1_field_available_languages_alter(&\$languages, \$context) {\n  // Add an unavailable language.\n  /*\n   *\$languages[] = \'xx\';\n   */\n  // Remove an available language.\n  /*\n   *\$index = array_search(\'yy\', \$languages);\n   *unset(\$languages[\$index]);\n   */\n  ${1:/* Your code here */}\n}'

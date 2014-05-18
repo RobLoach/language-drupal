@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_node_presave':
+    'prefix': 'hook_node_presave'
+    'body': '/**\n * Implements hook_node_presave().\n */\nfunction $1_node_presave(\$node) {\n  /*\n   *if (\$node->nid && \$node->moderate) {\n   *  // Reset votes when node is updated:\n   *  \$node->score = 0;\n   *  \$node->users = \'\';\n   *  \$node->votes = 0;\n   *}\n   */\n  ${1:/* Your code here */}\n}'

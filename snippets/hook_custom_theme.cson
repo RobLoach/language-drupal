@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_custom_theme':
+    'prefix': 'hook_custom_theme'
+    'body': '/**\n * Implements hook_custom_theme().\n */\nfunction $1_custom_theme() {\n  // Allow the user to request a particular theme via a query parameter.\n  /*\n   *if (isset(\$_GET[\'theme\'])) {\n   *  return \$_GET[\'theme\'];\n   *}\n   */\n  ${1:/* Your code here */}\n}'

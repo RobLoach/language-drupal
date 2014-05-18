@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_settings_form':
+    'prefix': 'h_field_settings_form'
+    'body': '/**\n * Implements hook_field_settings_form().\n */\nfunction $1_field_settings_form(\$field, \$instance, \$has_data) {\n  \$settings = \$field[\'settings\'];\n  \$form[\'${1}\']${2} = array(\n    \'#type\' => \'${3}\',\n    \'#title\' => t(\'${4}\'),\n    \'#default_value\' => \$settings[\'${5}\'],\n    \'#required\' => ${6},\n    \'#element_validate\' => array(\'${7}\'),\n    \'#description\' => t(\'${8}\'),${9}\n  );\n  return \$form;\n}'

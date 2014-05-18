@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_attach_presave':
+    'prefix': 'hook_field_attach_presave'
+    'body': '/**\n * Implements hook_field_attach_presave().\n */\nfunction $1_field_attach_presave(\$entity_type, \$entity) {\n  ${1:/* Your code here */}\n}'

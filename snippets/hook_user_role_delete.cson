@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_user_role_delete':
+    'prefix': 'hook_user_role_delete'
+    'body': '/**\n * Implements hook_user_role_delete().\n */\nfunction $1_user_role_delete(\$role) {\n  // Delete existing instances of the deleted role.\n  db_delete(\'${1}\')\n    ->condition(\'rid\', \$role->rid)\n    ->execute();\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_url_outbound_alter':
+    'prefix': 'h_url_outbound_alter'
+    'body': '/**\n * Implements hook_url_outbound_alter().\n */\nfunction $1_url_outbound_alter(&\$path, &\$options, \$original_path) {\n  ${1:/* Your code here */}\n}'

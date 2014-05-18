@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_info':
+    'prefix': 'h_field_info'
+    'body': '/**\n * Implements hook_field_info().\n */\nfunction $1_field_info() {\n  return array(\n    \'${1}\' => array(\n      \'label\' => t(\'${2}\'),\n      \'description\' => t(\'${3}\'),\n      \'settings\' => array(\'${4}\' => ${5}),\n      \'instance_settings\' => array(\'${6}\' => ${7}),\n      \'default_widget\' => \'${8}\',\n      \'default_formatter\' => \'${9}\',\n    ),\n  );\n}'

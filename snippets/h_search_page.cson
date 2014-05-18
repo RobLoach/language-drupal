@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_search_page':
+    'prefix': 'h_search_page'
+    'body': '/**\n * Implements hook_search_page().\n */\nfunction $1_search_page(\$results) {\n  \$output[\'prefix\'][\'#markup\'] = \'<ol class="search-results">\';\n\n  foreach (\$results as \$entry) {\n    \$output[] = array(\n      \'#theme\' => \'${1}\',\n      \'#result\' => \$entry,\n      \'#module\' => \'${2}\',\n    );\n  }\n  \$output[\'suffix\'][\'#markup\'] = \'</ol>\' . theme(\'pager\');\n\n  return \$output;\n}'

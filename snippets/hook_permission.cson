@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_permission':
+    'prefix': 'hook_permission'
+    'body': '/**\n * Implements hook_permission().\n */\nfunction $1_permission() {\n  return array(\n    /*\n     *\'administer my module\' =>  array(\n     *  \'title\' => t(\'Administer my module\'),\n     *  \'description\' => t(\'Perform administration tasks for my module.\'),\n     *),\n     */\n    \'${1}\' =>  array(\n      \'title\' => t(\'${2}\'),\n      \'description\' => t(\'${3}\'),\n    ),\n  );\n}'

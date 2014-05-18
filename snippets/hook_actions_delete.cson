@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_actions_delete':
+    'prefix': 'hook_actions_delete'
+    'body': '/**\n * Implements hook_actions_delete().\n */\nfunction $1_actions_delete(\$aid) {\n  db_delete(\'${1}\')\n    ->condition(\'aid\', \$aid)\n    ->execute();\n}'

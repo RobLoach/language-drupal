@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_dashboard_regions':
+    'prefix': 'hook_dashboard_regions'
+    'body': '/**\n * Implements hook_dashboard_regions().\n */\nfunction $1_dashboard_regions() {\n  // Define a new dashboard region. Your module can also then define\n  // theme_mymodule_dashboard_region() as a theme wrapper function to control\n  // the region\'s appearance.\n  /*\n   *return array(\'mymodule_dashboard_region\' => "My module\'s dashboard region");\n   */\n  ${1:/* Your code here */}\n}'

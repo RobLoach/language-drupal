@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_batch_alter':
+    'prefix': 'h_batch_alter'
+    'body': '/**\n * Implements hook_batch_alter().\n */\nfunction $1_batch_alter(&\$batch) {\n  ${1:/* Your code here */}\n}'

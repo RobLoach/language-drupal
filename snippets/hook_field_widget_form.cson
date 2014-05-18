@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_widget_form':
+    'prefix': 'hook_field_widget_form'
+    'body': '/**\n * Implements hook_field_widget_form().\n */\nfunction $1_field_widget_form(&\$form, &\$form_state, \$field, \$instance, \$langcode, \$items, \$delta, \$element) {\n  /*\n   *\$element += array(\n   *  \'#type\' => \$instance[\'widget\'][\'type\'],\n   *  \'#default_value\' => isset(\$items[\$delta]) ? \$items[\$delta] : \'\',\n   *);\n   */\n  \$element += array(\n    \'#type\' => ${1},\n    \'#default_value\' => ${2},\n  );\n  return \$element;\n}'

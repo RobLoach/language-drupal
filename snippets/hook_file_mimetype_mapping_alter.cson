@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_file_mimetype_mapping_alter':
+    'prefix': 'hook_file_mimetype_mapping_alter'
+    'body': '/**\n * Implements hook_file_mimetype_mapping_alter().\n */\nfunction $1_file_mimetype_mapping_alter(&\$mapping) {\n  // Add new MIME type \'drupal/info\'.\n  /*\n   *\$mapping[\'mimetypes\'][\'example_info\'] = \'drupal/info\';\n   */\n  // Add new extension \'.info\' and map it to the \'drupal/info\' MIME type.\n  /*\n   *\$mapping[\'extensions\'][\'info\'] = \'example_info\';\n   */\n  // Override existing extension mapping for \'.ogg\' files.\n  /*\n   *\$mapping[\'extensions\'][\'ogg\'] = 189;\n   */\n  \$mapping[\'${1}\'][\'${2}\'] = \'${3}\';\n}'

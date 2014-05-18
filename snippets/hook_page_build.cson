@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_page_build':
+    'prefix': 'hook_page_build'
+    'body': '/**\n * Implements hook_page_build().\n */\nfunction $1_page_build(&\$page) {\n  /*\n   *if (menu_get_object(\'node\', 1)) {\n   *  // We are on a node detail page. Append a standard disclaimer to the\n   *  // content region.\n   *  \$page[\'content\'][\'disclaimer\'] = array(\n   *    \'#markup\' => t(\'Acme, Inc. is not responsible for the contents of this sample code.\'),\n   *    \'#weight\' => 25,\n   *  );\n   *}\n   */\n  \$page[\'${1}\'][\'${2}\'] = array(\n    \'#markup\' => t(\'${3}\'),\n    \'#weight\' => ${4},\n  );\n}'

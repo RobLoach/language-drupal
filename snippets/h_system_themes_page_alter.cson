@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_system_themes_page_alter':
+    'prefix': 'h_system_themes_page_alter'
+    'body': '/**\n * Implements hook_system_themes_page_alter().\n */\nfunction $1_system_themes_page_alter(&\$theme_groups) {\n  foreach (\$theme_groups as \$state => &\$group) {\n    foreach (\$theme_groups[\$state] as &\$theme) {\n      ${1:/* Your code here */}\n    }\n  }\n}'

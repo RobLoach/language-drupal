@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_aggregator_remove':
+    'prefix': 'hook_aggregator_remove'
+    'body': '/**\n * Implements hook_aggregator_remove().\n */\nfunction $1_aggregator_remove(\$feed) {\n  /*\n   *mymodule_remove_items(\$feed->fid);\n   */\n  ${1:/* Your code here */}\n}'

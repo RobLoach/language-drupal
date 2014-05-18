@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_ranking':
+    'prefix': 'h_ranking'
+    'body': '/**\n * Implements hook_ranking().\n */\nfunction $1_ranking() {\n  ${1:/* Your code here */}\n}'

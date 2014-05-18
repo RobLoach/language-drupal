@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_file_download_access':
+    'prefix': 'hook_file_download_access'
+    'body': '/**\n * Implements hook_file_download_access().\n */\nfunction $1_file_download_access(\$field, \$entity_type, \$entity) {\n  /*\n   *if (\$entity_type == \'node\') {\n   *  return node_access(\'view\', \$entity);\n   *}\n   */\n  ${1:/* Your code here */}\n}'

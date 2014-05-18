@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_admin_paths':
+    'prefix': 'hook_admin_paths'
+    'body': '/**\n * Implements hook_admin_paths().\n */\nfunction $1_admin_paths() {\n  \$paths = array(\n    /*\n     *\'mymodule/* /add\' => TRUE,\n     *\'mymodule/* /edit\' => TRUE,\n     */\n    ${1:/* Your code here */}\n  );\n  return \$paths;\n}'

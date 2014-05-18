@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_options_list':
+    'prefix': 'h_options_list'
+    'body': '/**\n * Implements hook_options_list().\n */\nfunction $1_options_list(\$field) {\n   \$options = array(\n     ${1} => ${2},\n   );\n\n  return \$options;\n}'

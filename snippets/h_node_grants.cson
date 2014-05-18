@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_node_grants':
+    'prefix': 'h_node_grants'
+    'body': '/**\n * Implements hook_node_grants().\n */\nfunction $1_node_grants(\$account, \$op) {\n  ${1:/* Your code here */}\n\n  return \$grants;\n}'

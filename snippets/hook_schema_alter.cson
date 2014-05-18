@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_schema_alter':
+    'prefix': 'hook_schema_alter'
+    'body': '/**\n * Implements hook_schema_alter().\n */\nfunction $1_schema_alter(&\$schema) {\n  // Add field to existing schema.\n  /*\n   *\$schema[\'users\'][\'fields\'][\'timezone_id\'] = array(\n   *  \'type\' => \'int\',\n   *  \'not null\' => TRUE,\n   *  \'default\' => 0,\n   *  \'description\' => \'Per-user timezone configuration.\',\n   *);\n   */\n  ${1:/* Your code here */}\n}'

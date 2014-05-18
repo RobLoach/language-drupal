@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_user_logout':
+    'prefix': 'h_user_logout'
+    'body': '/**\n * Implements hook_user_logout().\n */\nfunction $1_user_logout(\$account) {\n  db_insert(\'${1}\')\n    ->fields(array(\n      \'uid\' => \$account->uid,\n      \'time\' => time(),\n    ))\n    ->execute();\n}'

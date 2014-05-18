@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_cron_queue_info':
+    'prefix': 'hook_cron_queue_info'
+    'body': '/**\n * Implements hook_cron_queue_info().\n */\nfunction $1_cron_queue_info() {\n  /*\n   *\$queues[\'aggregator_feeds\'] = array(\n   *  \'worker callback\' => \'aggregator_refresh\',\n   *  \'time\' => 60,\n   *);\n   */\n  \$queues[\'${1}\'] = array(\n    \'worker callback\' => \'${2}\',\n    \'time\' => ${3},\n  );\n  return \$queues;\n}'

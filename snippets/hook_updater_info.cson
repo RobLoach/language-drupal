@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_updater_info':
+    'prefix': 'hook_updater_info'
+    'body': '/**\n * Implements hook_updater_info().\n */\nfunction $1_updater_info() {\n  /*\n   *return array(\n   *  \'module\' => array(\n   *    \'class\' => \'ModuleUpdater\',\n   *    \'name\' => t(\'Update modules\'),\n   *    \'weight\' => 0,\n   *  ),\n   *  \'theme\' => array(\n   *    \'class\' => \'ThemeUpdater\',\n   *    \'name\' => t(\'Update themes\'),\n   *    \'weight\' => 0,\n   *  ),\n   *);\n   */\n  return array(\n    \'${1}\' => array(\n      \'class\' => \'${2}\',\n      \'name\' => t(\'${3}\'),\n      \'weight\' => ${4},\n    ),\n  );\n}'

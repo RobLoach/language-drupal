@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_search_admin':
+    'prefix': 'h_search_admin'
+    'body': '/**\n * Implements hook_search_admin().\n */\nfunction $1_search_admin() {\n  \$form[\'${1}\']${2} = array(\n    \'#title\' => t(\'${3}\'),\n    \'#type\' => \'${4}\',\n    \'#theme\' => \'${5}\',\n    \'#default_value\' => ${6},${7}\n\n  return \$form;\n}'

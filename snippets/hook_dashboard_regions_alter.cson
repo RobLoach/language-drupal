@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_dashboard_regions_alter':
+    'prefix': 'hook_dashboard_regions_alter'
+    'body': '/**\n * Implements hook_dashboard_regions_alter().\n */\nfunction $1_dashboard_regions_alter(\$regions) {\n  // Remove the sidebar region defined by the core dashboard module.\n  /*\n   *unset(\$regions[\'dashboard_sidebar\']);\n   */\n  ${1:/* Your code here */}\n}'

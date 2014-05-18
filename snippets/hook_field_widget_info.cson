@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_widget_info':
+    'prefix': 'hook_field_widget_info'
+    'body': '/**\n * Implements hook_field_widget_info().\n */\nfunction $1_field_widget_info() {\n    return array(\n    /*\n     *\'text_textfield\' => array(\n     *  \'label\' => t(\'Text field\'),\n     *  \'field types\' => array(\'text\'),\n     *  \'settings\' => array(\'size\' => 60),\n     *  \'behaviors\' => array(\n     *    \'multiple values\' => FIELD_BEHAVIOR_DEFAULT,\n     *    \'default value\' => FIELD_BEHAVIOR_DEFAULT,\n     *  ),\n     *),\n     */\n    \'${1}\' => array(\n      \'label\' => t(\'${2}\'),\n      \'field types\' => array(\'${3}\'),\n      \'settings\' => array(\'${4}\' => ${5}),\n      \'behaviors\' => array(\n        \'multiple values\' => ${6}FIELD_BEHAVIOR_DEFAULT,\n        \'default value\' => ${7}FIELD_BEHAVIOR_DEFAULT,\n      ),\n    ),\n  );\n}'

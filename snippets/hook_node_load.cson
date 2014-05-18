@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_node_load':
+    'prefix': 'hook_node_load'
+    'body': '/**\n * Implements hook_node_load().\n */\nfunction $1_node_load(\$nodes, \$types) {\n  /*\n   *\$result = db_query(\'SELECT nid, foo FROM {mytable} WHERE nid IN(:nids)\', array(\':nids\' => array_keys(\$nodes)));\n   *foreach (\$result as \$record) {\n   *  \$nodes[\$record->nid]->foo = \$record->foo;\n   *}\n   */\n  ${1:/* Your code here */}\n}'

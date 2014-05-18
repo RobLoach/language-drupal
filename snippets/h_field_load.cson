@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_load':
+    'prefix': 'h_field_load'
+    'body': '/**\n * Implements hook_field_load().\n */\nfunction $1_field_load(\$entity_type, \$entities, \$field, \$instances, \$langcode, &\$items, \$age) {\n  ${1:/* Your code here */}\n}'

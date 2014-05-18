@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_attach_purge':
+    'prefix': 'hook_field_attach_purge'
+    'body': '/**\n * Implements hook_field_attach_purge().\n */\nfunction $1_field_attach_purge(\$entity_type, \$entity, \$field, \$instance) {\n  // find the corresponding data in mymodule and purge it\n  /*\n   *if(\$entity_type == \'node\' && \$field->field_name == \'my_field_name\') {\n   *  mymodule_remove_mydata(\$entity->nid);\n   *}\n   */\n  ${1:/* Your code here */}\n}'

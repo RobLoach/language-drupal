@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_user_categories':
+    'prefix': 'h_user_categories'
+    'body': '/**\n * Implements hook_user_categories().\n */\nfunction $1_user_categories() {\n  return array(array(\n    \'name\' => \'${1}\',\n    \'title\' => t(\'${2}\'),\n    \'weight\' => ${3},\n  ));\n}'

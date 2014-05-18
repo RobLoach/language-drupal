@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_presave':
+    'prefix': 'hook_field_presave'
+    'body': '/**\n * Implements hook_field_presave().\n */\nfunction $1_field_presave(\$entity_type, \$entity, \$field, \$instance, \$langcode, &\$items) {\n  if (\$field[\'type\'] == \'${1}\') {\n    // Let PHP round the value to ensure consistent behavior across storage\n    // backends.\n    foreach (\$items as \$delta => \$item) {\n      /*\n       *if (isset(\$item[\'value\'])) {\n       *  \$items[\$delta][\'value\'] = round(\$item[\'value\'], \$field[\'settings\'][\'scale\']);\n       *}\n       */\n      ${1:/* Your code here */}\n    }\n  }\n}'

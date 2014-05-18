@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_mail_alter':
+    'prefix': 'hook_mail_alter'
+    'body': '/**\n * Implements hook_mail_alter().\n */\nfunction $1_mail_alter(&\$message) {\n  /*\n   *if (\$message[\'id\'] == \'modulename_messagekey\') {\n   *  \$message[\'body\'][] = "--\nMail sent out from " . variable_get(\'sitename\', t(\'Drupal\'));\n   *}\n   */\n  if (\$message[\'id\'] == \'${1}\') {\n    \$message[\'body\'][] = "${2}";\n  }\n}'

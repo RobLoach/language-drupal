@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_node_view':
+    'prefix': 'hook_node_view'
+    'body': '/**\n * Implements hook_node_view().\n */\nfunction $1_node_view(\$node, \$view_mode, \$langcode) {\n  /*\n   *\$node->content[\'my_additional_field\'] = array(\n   *  \'#markup\' => \$additional_field,\n   *  \'#weight\' => 10,\n   *  \'#theme\' => \'mymodule_my_additional_field\',\n   *);\n   */\n  ${1:/* Your code here */}\n}'

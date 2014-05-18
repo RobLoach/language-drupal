@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_insert':
+    'prefix': 'hook_field_insert'
+    'body': '/**\n * Implements hook_field_insert().\n */\nfunction $1_field_insert(\$entity_type, \$entity, \$field, \$instance, \$langcode, &\$items) {\n  /*\n   *if (variable_get(\'taxonomy_maintain_index_table\', TRUE) && \$field[\'storage\'][\'type\'] == \'field_sql_storage\' && \$entity_type == \'node\' && \$entity->status) {\n   *  \$query = db_insert(\'taxonomy_index\')->fields(array(\'nid\', \'tid\', \'sticky\', \'created\', ));\n   *  foreach (\$items as \$item) {\n   *    \$query->values(array(\n   *      \'nid\' => \$entity->nid,\n   *      \'tid\' => \$item[\'tid\'],\n   *      \'sticky\' => \$entity->sticky,\n   *      \'created\' => \$entity->created,\n   *    ));\n   *  }\n   *  \$query->execute();\n   *}\n   */\n  ${1:/* Your code here */}\n}'

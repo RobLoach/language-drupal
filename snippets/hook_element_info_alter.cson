@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_element_info_alter':
+    'prefix': 'hook_element_info_alter'
+    'body': '/**\n * Implements hook_element_info_alter().\n */\nfunction $1_element_info_alter(&\$type) {\n  // Decrease the default size of textfields.\n  /*\n   *if (isset(\$type[\'textfield\'][\'#size\'])) {\n   *  \$type[\'textfield\'][\'#size\'] = 40;\n   *}\n   */\n  if (isset(\$type[\'${1}\'])) {\n    \$type[\'${2}\'] = ${3};\n  }\n}'

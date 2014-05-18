@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_module_implements_alter':
+    'prefix': 'h_module_implements_alter'
+    'body': '/**\n * Implements hook_module_implements_alter().\n */\nfunction $1_module_implements_alter(&\$implementations, \$hook) {\n  if (\$hook == \'${1}\') {\n    ${2:/* Your code here */}\n  }\n}'

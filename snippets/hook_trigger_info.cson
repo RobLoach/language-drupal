@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_trigger_info':
+    'prefix': 'hook_trigger_info'
+    'body': '/**\n * Implements hook_trigger_info().\n */\nfunction $1_trigger_info() {\n  return array(\n    \'${1}\' => array(\n      /*\n       *\'node_presave\' => array(\n       *  \'label\' => t(\'When either saving new content or updating existing content\'),\n       *),\n       */\n      \'${2}\' => array(\n        \'label\' => t(\'${3}\'),\n      ),\n    ),\n  );\n}'

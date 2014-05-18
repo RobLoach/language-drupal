@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_taxonomy_vocabulary_load':
+    'prefix': 'hook_taxonomy_vocabulary_load'
+    'body': '/**\n * Implements hook_taxonomy_vocabulary_load().\n */\nfunction $1_taxonomy_vocabulary_load(\$vocabularies) {\n  foreach (\$vocabularies as \$vocabulary) {\n    /*\n     *\$vocabulary->synonyms = variable_get(\'taxonomy_\' . \$vocabulary->vid . \'_synonyms\', FALSE);\n     */\n    ${1:/* Your code here */}\n  }\n}'

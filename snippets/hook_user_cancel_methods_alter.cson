@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_user_cancel_methods_alter':
+    'prefix': 'hook_user_cancel_methods_alter'
+    'body': '/**\n * Implements hook_user_cancel_methods_alter().\n */\nfunction $1_user_cancel_methods_alter(&\$methods) {\n  // Limit access to disable account and unpublish content method.\n  /*\n   *\$methods[\'user_cancel_block_unpublish\'][\'access\'] = user_access(\'administer site configuration\');\n   */\n  // Remove the content re-assigning method.\n  /*\n   *unset(\$methods[\'user_cancel_reassign\']);\n   */\n  // Add a custom zero-out method.\n  /*\n   *\$methods[\'mymodule_zero_out\'] = array(\n   *  \'title\' => t(\'Delete the account and remove all content.\'),\n   *  \'description\' => t(\'All your content will be replaced by empty strings.\'),\n   *  // access should be used for administrative methods only.\n   *  \'access\' => user_access(\'access zero-out account cancellation method\'),\n   *);\n   */\n   \$methods[\'${1}\']${2}\n}'

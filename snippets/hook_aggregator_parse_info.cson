@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_aggregator_parse_info':
+    'prefix': 'hook_aggregator_parse_info'
+    'body': '/**\n * Implements hook_aggregator_parse_info().\n */\nfunction $1_aggregator_parse_info() {\n  return array(\n    \'title\' => t(\'${1}\'),\n    \'description\' => t(\'${2}\'),\n  );\n}'

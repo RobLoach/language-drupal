@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_stream_wrappers':
+    'prefix': 'hook_stream_wrappers'
+    'body': '/**\n * Implements hook_stream_wrappers().\n */\nfunction $1_stream_wrappers() {\n  return array(\n    /*\n     *\'public\' => array(\n     *  \'name\' => t(\'Public files\'),\n     *  \'class\' => \'DrupalPublicStreamWrapper\',\n     *  \'description\' => t(\'Public local files served by the webserver.\'),\n     *),\n     */\n     \'${1}\' => array(\n      \'name\' => t(\'${2}\'),\n      \'class\' => \'${3}\',\n      \'description\' => t(\'${4}\'),\n    ),\n    )\n  );\n}'

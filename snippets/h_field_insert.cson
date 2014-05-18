@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_insert':
+    'prefix': 'h_field_insert'
+    'body': '/**\n * Implements hook_field_insert().\n */\nfunction $1_field_insert(\$entity_type, \$entity, \$field, \$instance, \$langcode, &\$items) {\n  ${1:/* Your code here */}\n}'

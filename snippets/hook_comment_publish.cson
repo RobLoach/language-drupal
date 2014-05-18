@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_comment_publish':
+    'prefix': 'hook_comment_publish'
+    'body': '/**\n * Implements hook_comment_publish().\n */\nfunction $1_comment_publish(\$comment) {\n  /*\n   *drupal_set_message(t(\'Comment: @subject has been published\', array(\'@subject\' => \$comment->subject)));\n   */\n  ${1:/* Your code here */}\n}'

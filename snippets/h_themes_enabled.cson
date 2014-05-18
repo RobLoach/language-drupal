@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_themes_enabled':
+    'prefix': 'h_themes_enabled'
+    'body': '/**\n * Implements hook_themes_enabled().\n */\nfunction $1_themes_enabled(\$theme_list) {\n  foreach (\$theme_list as \$theme) {\n    ${1:/* Your code here */}\n  }\n}'

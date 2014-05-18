@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_delete':
+    'prefix': 'hook_field_delete'
+    'body': '/**\n * Implements hook_field_delete().\n */\nfunction $1_field_delete(\$entity_type, \$entity, \$field, \$instance, \$langcode, &\$items) {\n  list(\$id, \$vid, \$bundle) = entity_extract_ids(\$entity_type, \$entity);\n  foreach (\$items as \$delta => \$item) {\n    // For hook_file_references(), remember that this is being deleted.\n    /*\n     *\$item[\'file_field_name\'] = \$field[\'field_name\'];\n     */\n    // Pass in the ID of the object that is being removed so all references can\n    // be counted in hook_file_references().\n    /*\n     *\$item[\'file_field_type\'] = \$entity_type;\n     *\$item[\'file_field_id\'] = \$id;\n     *file_field_delete_file(\$item, \$field);\n     */\n    ${1:/* Your code here */}\n  }\n}'

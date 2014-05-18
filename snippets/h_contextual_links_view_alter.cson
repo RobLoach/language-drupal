@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_contextual_links_view_alter':
+    'prefix': 'h_contextual_links_view_alter'
+    'body': '/**\n * Implements hook_contextual_links_view_alter().\n */\nfunction $1_contextual_links_view_alter(&\$element, \$items) {\n  ${1:/* Your code here */}\n}'

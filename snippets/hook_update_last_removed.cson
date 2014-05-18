@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_update_last_removed':
+    'prefix': 'hook_update_last_removed'
+    'body': '/**\n * Implements hook_update_last_removed().\n */\nfunction $1_update_last_removed() {\n  ${1:/* Your code here */}\n}'

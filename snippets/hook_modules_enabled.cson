@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_modules_enabled':
+    'prefix': 'hook_modules_enabled'
+    'body': '/**\n * Implements hook_modules_enabled().\n */\nfunction $1_modules_enabled(\$modules) {\n  /*\n   *if (in_array(\'lousy_module\', \$modules)) {\n   *  drupal_set_message(t(\'mymodule is not compatible with lousy_module\'), \'error\');\n   *  mymodule_disable_functionality();\n   *}\n   */\n  ${1:/* Your code here */}\n}'

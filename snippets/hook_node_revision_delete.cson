@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_node_revision_delete':
+    'prefix': 'hook_node_revision_delete'
+    'body': '/**\n * Implements hook_node_revision_delete().\n */\nfunction $1_node_revision_delete(\$node) {\n  db_delete(\'${1}\')\n    ->condition(\'vid\', \$node->vid)\n    ->execute();\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_attach_prepare_translation_alter':
+    'prefix': 'h_field_attach_prepare_translation_alter'
+    'body': '/**\n * Implements hook_field_attach_prepare_translation_alter().\n */\nfunction $1_field_attach_prepare_translation_alter(&\$entity, \$context) {\n  ${1:/* Your code here */}\n}'

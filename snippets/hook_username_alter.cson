@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_username_alter':
+    'prefix': 'hook_username_alter'
+    'body': '/**\n * Implements hook_username_alter().\n */\nfunction $1_username_alter(&\$name, \$account) {\n  // Display the user\'s uid instead of name.\n  /*\n   *if (isset(\$account->uid)) {\n   *  \$name = t(\'User !uid\', array(\'!uid\' => \$account->uid));\n   *}\n   */\n  ${1:/* Your code here */}\n}'

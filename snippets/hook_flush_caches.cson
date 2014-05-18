@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_flush_caches':
+    'prefix': 'hook_flush_caches'
+    'body': '/**\n * Implements hook_flush_caches().\n */\nfunction $1_flush_caches() {\n  /*\n   *return array(\'cache_example\');\n   */\n  return array(\'${1}\');\n}'

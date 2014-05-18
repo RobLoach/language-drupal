@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_date_formats_alter':
+    'prefix': 'hook_date_formats_alter'
+    'body': '/**\n * Implements hook_date_formats_alter().\n */\nfunction $1_date_formats_alter(&\$formats) {\n  foreach (\$formats as \$id => \$format) {\n    /*\n     *\$formats[\$id][\'locales\'][] = \'en-ca\';\n     */\n    \$formats[\$id][\'${1}\'][] = \'${2}\';\n  }\n}'

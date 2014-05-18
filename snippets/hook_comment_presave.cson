@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_comment_presave':
+    'prefix': 'hook_comment_presave'
+    'body': '/**\n * Implements hook_comment_presave().\n */\nfunction $1_comment_presave(\$comment) {\n  // Remove leading & trailing spaces from the comment subject.\n  /*\n   *\$comment->subject = trim(\$comment->subject);\n   */\n  ${1:/* Your code here */}\n}'

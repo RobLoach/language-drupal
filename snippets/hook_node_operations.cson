@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_node_operations':
+    'prefix': 'hook_node_operations'
+    'body': '/**\n * Implements hook_node_operations().\n */\nfunction $1_node_operations() {\n  \$operations = array(\n    /*\n     *\'publish\' => array(\n     *  \'label\' => t(\'Publish selected content\'),\n     *  \'callback\' => \'node_mass_update\',\n     *  \'callback arguments\' => array(\'updates\' => array(\'status\' => NODE_PUBLISHED)),\n     *),\n     */\n    \'${1}\' => array(\n      \'label\' => t(\'${2}\'),\n      \'callback\' => \'${3}\',\n      \'callback arguments\' => array(\'${4}\' => array(\'${5}\' => ${6})),\n    ),\n  );\n  return \$operations;\n}'

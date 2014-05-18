@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_module_implements_alter':
+    'prefix': 'hook_module_implements_alter'
+    'body': '/**\n * Implements hook_module_implements_alter().\n */\nfunction $1_module_implements_alter(&\$implementations, \$hook) {\n  /*\n   *if (\$hook == \'rdf_mapping\') {\n   *  // Move my_module_rdf_mapping() to the end of the list. module_implements()\n   *  // iterates through \$implementations with a foreach loop which PHP iterates\n   *  // in the order that the items were added, so to move an item to the end of\n   *  // the array, we remove it and then add it.\n   *  \$group = \$implementations[\'my_module\'];\n   *  unset(\$implementations[\'my_module\']);\n   *  \$implementations[\'my_module\'] = \$group;\n   *}\n   */\n  if (\$hook == \'${1}\') {\n    ${2:/* Your code here */}\n  }\n}'

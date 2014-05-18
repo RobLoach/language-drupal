@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_update_N':
+    'prefix': 'h_update_N'
+    'body': '/**\n * Implements hook_update_N().\n */\nfunction $1_update_${1:/* Update number */}(&\$sandbox = NULL) {\n  \$ret = t(\'${2:/* Message */}\');\n\n  ${3:/* Your code here */}\n\n  return \$ret;\n}'

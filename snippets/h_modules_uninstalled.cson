@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_modules_uninstalled':
+    'prefix': 'h_modules_uninstalled'
+    'body': '/**\n * Implements hook_modules_uninstalled().\n */\nfunction $1_modules_uninstalled(\$modules) {\n  foreach (\$modules as \$module) {\n    db_delete(\'${1}\')\n      ->condition(\'module\', \$module)\n      ->execute();\n  }\n  ${2}_cache_rebuild();\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_countries_alter':
+    'prefix': 'h_countries_alter'
+    'body': '/**\n * Implements hook_countries_alter().\n */\nfunction $1_countries_alter(&\$countries) {\n  ${1:/* Your code here */}\n}'

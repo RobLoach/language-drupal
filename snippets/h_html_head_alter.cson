@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_html_head_alter':
+    'prefix': 'h_html_head_alter'
+    'body': '/**\n * Implements hook_html_head_alter().\n */\nfunction $1_html_head_alter(&\$head_elements) {\n  foreach (\$head_elements as \$key => \$element) {\n     ${1:/* Your code here */}\n  }\n}'

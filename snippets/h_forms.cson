@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_forms':
+    'prefix': 'h_forms'
+    'body': '/**\n * Implements hook_forms().\n */\nfunction $1_forms(\$form_id, \$args) {\n  \$forms[\'${1}\'] = array(\n    \'callback\' => \'${2}\',\n    \'callback arguments\' => array(\'${3}\'),\n  );\n\n  return \$forms;\n}'

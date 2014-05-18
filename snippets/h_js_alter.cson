@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_js_alter':
+    'prefix': 'h_js_alter'
+    'body': '/**\n * Implements hook_js_alter().\n */\nfunction $1_js_alter(&\$javascript) {\n  ${1:/* Your code here */}\n}'

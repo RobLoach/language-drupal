@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_stream_wrappers_alter':
+    'prefix': 'h_stream_wrappers_alter'
+    'body': '/**\n * Implements hook_stream_wrappers_alter().\n */\nfunction $1_stream_wrappers_alter(&\$wrappers) {\n  ${1:/* Your code here */}\n}'

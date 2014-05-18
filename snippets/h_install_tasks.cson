@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_install_tasks':
+    'prefix': 'h_install_tasks'
+    'body': '/**\n * Implements hook_install_tasks().\n */\nfunction $1_install_tasks() {\n  \$tasks = array(\n    ${1:/* Your code here */}\n  );\n  return \$tasks;\n}'

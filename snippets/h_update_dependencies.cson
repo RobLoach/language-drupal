@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_update_dependencies':
+    'prefix': 'h_update_dependencies'
+    'body': '/**\n * Implements hook_update_dependencies().\n */\nfunction $1_update_dependencies() {\n  \$dependencies[\'${1}\'][\'${2}\'] = array(\n    \'${3}\' => ${4},\n  );\n\n  return \$dependencies;\n}'

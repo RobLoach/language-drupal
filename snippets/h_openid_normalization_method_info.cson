@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_openid_normalization_method_info':
+    'prefix': 'h_openid_normalization_method_info'
+    'body': '/**\n * Implements hook_openid_normalization_method_info().\n */\nfunction $1_openid_normalization_method_info() {\n  return array(\n    \'${1}\' => \'${2}\',\n  );\n}'

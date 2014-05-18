@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_token_info_alter':
+    'prefix': 'hook_token_info_alter'
+    'body': '/**\n * Implements hook_token_info_alter().\n */\nfunction $1_token_info_alter(&\$data) {\n  // Modify description of node tokens for our site.\n  /*\n   *\$data[\'tokens\'][\'node\'][\'nid\'] = array(\n   *  \'name\' => t("Node ID"),\n   *  \'description\' => t("The unique ID of the article."),\n   *);\n   *\$data[\'tokens\'][\'node\'][\'title\'] = array(\n   *  \'name\' => t("Title"),\n   *  \'description\' => t("The title of the article."),\n   *);\n   */\n  // Chained tokens for nodes.\n  /*\n   *\$data[\'tokens\'][\'node\'][\'created\'] = array(\n   *  \'name\' => t("Date created"),\n   *  \'description\' => t("The date the article was posted."),\n   *  \'type\' => \'date\',\n   *);\n   */\n  \$data[\'tokens\'][\'${1}\'][\'${2}\'] = array(\n    \'name\' => t("${3}"),\n    \'description\' => t("${4}"),\n  );\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_countries_alter':
+    'prefix': 'hook_countries_alter'
+    'body': '/**\n * Implements hook_countries_alter().\n */\nfunction $1_countries_alter(&\$countries) {\n  // Elbonia is now independent, so add it to the country list.\n  /*\n   *\$countries[\'EB\'] = \'Elbonia\';\n   */\n  ${1:/* Your code here */}\n}'

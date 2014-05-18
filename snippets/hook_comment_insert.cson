@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_comment_insert':
+    'prefix': 'hook_comment_insert'
+    'body': '/**\n * Implements hook_comment_insert().\n */\nfunction $1_comment_insert(\$comment) {\n  // Reindex the node when comments are added.\n  /*\n   *search_touch_node(\$comment->nid);\n   */\n  ${1:/* Your code here */}\n}'

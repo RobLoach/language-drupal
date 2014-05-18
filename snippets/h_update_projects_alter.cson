@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_update_projects_alter':
+    'prefix': 'h_update_projects_alter'
+    'body': '/**\n * Implements hook_update_projects_alter().\n */\nfunction $1_update_projects_alter(&\$projects) {\n  ${1:/* Your code here */}\n}'

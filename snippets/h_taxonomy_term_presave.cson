@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_taxonomy_term_presave':
+    'prefix': 'h_taxonomy_term_presave'
+    'body': '/**\n * Implements hook_taxonomy_term_presave().\n */\nfunction $1_taxonomy_term_presave(\$term) {\n  ${1:/* Your code here */}\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_attach_delete':
+    'prefix': 'hook_field_attach_delete'
+    'body': '/**\n * Implements hook_field_attach_delete().\n */\nfunction $1_field_attach_delete(\$entity_type, \$entity) {\n  ${1:/* Your code here */}\n}'

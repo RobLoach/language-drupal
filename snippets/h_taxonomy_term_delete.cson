@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_taxonomy_term_delete':
+    'prefix': 'h_taxonomy_term_delete'
+    'body': '/**\n * Implements hook_taxonomy_term_delete().\n */\nfunction $1_taxonomy_term_delete(\$term) {\n  ${1:/* Your code here */}\n}'

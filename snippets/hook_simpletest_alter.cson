@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_simpletest_alter':
+    'prefix': 'hook_simpletest_alter'
+    'body': '/**\n * Implements hook_simpletest_alter().\n */\nfunction $1_simpletest_alter(&\$groups) {\n  // An alternative session handler module would not want to run the original\n  // Session https handling test because it checks the sessions table in the\n  // database.\n  /*\n   *unset(\$groups[\'Session\'][\'testHttpsSession\']);\n   */\n  ${1:/* Your code here */}\n}'

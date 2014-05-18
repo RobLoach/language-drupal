@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_block_info_alter':
+    'prefix': 'hook_block_info_alter'
+    'body': '/**\n * Implements hook_block_info_alter().\n */\nfunction $1_block_info_alter(&\$blocks, \$theme, \$code_blocks) {\n  // Disable the login block.\n  /*\n   *\$blocks[\'user\'][\'login\'][\'status\'] = 0;\n   */\n  ${1:/* Your code here */}\n}'

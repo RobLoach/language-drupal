@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_node_view_alter':
+    'prefix': 'h_node_view_alter'
+    'body': '/**\n * Implements hook_node_view_alter().\n */\nfunction $1_node_view_alter(&\$build) {\n}'

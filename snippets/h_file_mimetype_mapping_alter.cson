@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_file_mimetype_mapping_alter':
+    'prefix': 'h_file_mimetype_mapping_alter'
+    'body': '/**\n * Implements hook_file_mimetype_mapping_alter().\n */\nfunction $1_file_mimetype_mapping_alter(&\$mapping) {\n  \$mapping[\'${1}\'][\'${2}\'] = \'${3}\';\n}'

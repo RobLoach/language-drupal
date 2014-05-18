@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_prepare_view':
+    'prefix': 'hook_field_prepare_view'
+    'body': '/**\n * Implements hook_field_prepare_view().\n */\nfunction $1_field_prepare_view(\$entity_type, \$entities, \$field, \$instances, \$langcode, &\$items) {\n  // Sample code from image.module: if there are no images specified at all,\n  // use the default image.\n  /*\n   *foreach (\$entities as \$id => \$entity) {\n   *  if (empty(\$items[\$id]) && \$field[\'settings\'][\'default_image\']) {\n   *    if (\$file = file_load(\$field[\'settings\'][\'default_image\'])) {\n   *      \$items[\$id][0] = (array) \$file + array(\n   *        \'is_default\' => TRUE,\n   *        \'alt\' => \'\',\n   *        \'title\' => \'\',\n   *      );\n   *    }\n   *  }\n   *}\n   */\n  ${1:/* Your code here */}\n}'

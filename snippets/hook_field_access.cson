@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_access':
+    'prefix': 'hook_field_access'
+    'body': '/**\n * Implements hook_field_access().\n */\nfunction $1_field_access(\$op, \$field, \$entity_type, \$entity, \$account) {\n  /*\n   *if (\$field[\'field_name\'] == \'field_of_interest\' && \$op == \'edit\') {\n   *  return user_access(\'edit field of interest\', \$account);\n   *}\n   */\n  ${1:/* Your code here */}\n  return TRUE;\n}'

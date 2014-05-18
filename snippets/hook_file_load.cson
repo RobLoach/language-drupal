@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_file_load':
+    'prefix': 'hook_file_load'
+    'body': '/**\n * Implements hook_file_load().\n */\nfunction $1_file_load(\$files) {\n  // Add the upload specific data into the file object.\n  /*\n   *\$result = db_query(\'SELECT * FROM {upload} u WHERE u.fid IN (:fids)\', array(\':fids\' => array_keys(\$files)))->fetchAll(PDO::FETCH_ASSOC);\n   *foreach (\$result as \$record) {\n   *  foreach (\$record as \$key => \$value) {\n   *    \$files[\$record[\'fid\']]->\$key = \$value;\n   *  }\n   *}\n   */\n  ${1:/* Your code here */}\n}'

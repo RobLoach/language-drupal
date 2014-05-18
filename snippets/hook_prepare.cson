@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_prepare':
+    'prefix': 'hook_prepare'
+    'body': '/**\n * Implements hook_prepare().\n */\nfunction $1_prepare(\$node) {\n  /*\n   *if (\$file = file_check_upload(\$field_name)) {\n   *  \$file = file_save_upload(\$field_name, _image_filename(\$file->filename, NULL, TRUE));\n   *  if (\$file) {\n   *    if (!image_get_info(\$file->uri)) {\n   *      form_set_error(\$field_name, t(\'Uploaded file is not a valid image\'));\n   *      return;\n   *    }\n   *  }\n   *  else {\n   *    return;\n   *  }\n   *  \$node->images[\'_original\'] = \$file->uri;\n   *  _image_build_derivatives(\$node, TRUE);\n   *  \$node->new_file = TRUE;\n   *}\n   */\n  ${1:/* Your code here */}\n}'

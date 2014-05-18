@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_widget_form':
+    'prefix': 'h_field_widget_form'
+    'body': '/**\n * Implements hook_field_widget_form().\n */\nfunction $1_field_widget_form(&\$form, &\$form_state, \$field, \$instance, \$langcode, \$items, \$delta, \$element) {\n  \$element += array(\n    \'#type\' => ${1},\n    \'#default_value\' => ${2},\n  );\n  return \$element;\n}'

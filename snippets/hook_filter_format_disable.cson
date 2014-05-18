@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_filter_format_disable':
+    'prefix': 'hook_filter_format_disable'
+    'body': '/**\n * Implements hook_filter_format_disable().\n */\nfunction $1_filter_format_disable(\$format) {\n  /*\n   *mymodule_cache_rebuild();\n   */\n  ${1:/* Your code here */}\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_shortcut_default_set':
+    'prefix': 'h_shortcut_default_set'
+    'body': '/**\n * Implements hook_shortcut_default_set().\n */\nfunction $1_shortcut_default_set(\$account) {\n  ${1:/* Your code here */}\n}'

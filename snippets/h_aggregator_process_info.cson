@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_aggregator_process_info':
+    'prefix': 'h_aggregator_process_info'
+    'body': '/**\n * Implements hook_aggregator_process_info().\n */\nfunction $1_aggregator_process_info(\$feed) {\n  return array(\n    \'title\' => t(\'${1}\'),\n    \'description\' => t(\'${2}\'),\n  );\n}'

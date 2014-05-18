@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_entity_load':
+    'prefix': 'h_entity_load'
+    'body': '/**\n * Implements hook_entity_load().\n */\nfunction $1_entity_load(\$entities, \$type) {\n  foreach (\$entities as \$entity) {\n    \$entity->${1} = mymodule_add_something(\$entity, \$type);\n  }\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_prepare_translation':
+    'prefix': 'hook_field_prepare_translation'
+    'body': '/**\n * Implements hook_field_prepare_translation().\n */\nfunction $1_field_prepare_translation(\$entity_type, \$entity, \$field, \$instance, \$langcode, &\$items, \$source_entity, \$source_langcode) {\n  // If the translating user is not permitted to use the assigned text format,\n  // we must not expose the source values.\n  /*\n   *\$field_name = \$field[\'field_name\'];\n   *\$formats = filter_formats();\n   *\$format_id = \$source_entity->{\$field_name}[\$source_langcode][0][\'format\'];\n   *if (!filter_access(\$formats[\$format_id])) {\n   *  \$items = array();\n   *}\n   */\n  ${1:/* Your code here */}\n}'

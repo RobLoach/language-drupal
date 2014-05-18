@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_attach_submit':
+    'prefix': 'hook_field_attach_submit'
+    'body': '/**\n * Implements hook_field_attach_submit().\n */\nfunction $1_field_attach_submit(\$entity_type, \$entity, \$form, &\$form_state) {\n  ${1:/* Your code here */}\n}'

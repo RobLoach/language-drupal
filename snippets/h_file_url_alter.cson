@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_file_url_alter':
+    'prefix': 'h_file_url_alter'
+    'body': '/**\n * Implements hook_file_url_alter().\n */\nfunction $1_file_url_alter(&\$uri) {\n  ${1:/* Your code here */}\n}'

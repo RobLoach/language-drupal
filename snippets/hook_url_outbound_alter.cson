@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_url_outbound_alter':
+    'prefix': 'hook_url_outbound_alter'
+    'body': '/**\n * Implements hook_url_outbound_alter().\n */\nfunction $1_url_outbound_alter(&\$path, &\$options, \$original_path) {\n  // Instead of pointing to user/[uid]/edit, point to user/me/edit.\n  /*\n   *if (preg_match(\'|^user/([0-9]*)/edit(/.*)?|\', \$path, \$matches)) {\n   *  global \$user;\n   *  if (\$user->uid == \$matches[1]) {\n   *    \$path = \'user/me/edit\' . \$matches[2];\n   *  }\n   *}\n   */\n  ${1:/* Your code here */}\n}'

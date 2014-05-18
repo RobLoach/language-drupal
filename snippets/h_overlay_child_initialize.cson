@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_overlay_child_initialize':
+    'prefix': 'h_overlay_child_initialize'
+    'body': '/**\n * Implements hook_overlay_child_initialize().\n */\nfunction $1_overlay_child_initialize() {\n  ${1:/* Your code here */}\n}'

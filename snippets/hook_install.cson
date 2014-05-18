@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_install':
+    'prefix': 'hook_install'
+    'body': '/**\n * Implements hook_install().\n */\nfunction $1_install() {\n  // Populate the default {node_access} record.\n  /*\n   *db_insert(\'node_access\')\n   *  ->fields(array(\n   *    \'nid\' => 0,\n   *    \'gid\' => 0,\n   *    \'realm\' => \'all\',\n   *    \'grant_view\' => 1,\n   *    \'grant_update\' => 0,\n   *    \'grant_delete\' => 0,\n   *  ))\n   *  ->execute();\n   */\n  ${1:/* Your code here */}\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_date_format_types':
+    'prefix': 'hook_date_format_types'
+    'body': '/**\n * Implements hook_date_format_types().\n */\nfunction $1_date_format_types() {\n  return array(\n    /*\n     *\'long\' => t(\'Long\'),\n     *\'medium\' => t(\'Medium\'),\n     *\'short\' => t(\'Short\'),\n     */\n    \'${1}\' => t(\'${2}\'),\n  );\n}'

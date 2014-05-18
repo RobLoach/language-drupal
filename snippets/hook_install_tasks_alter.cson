@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_install_tasks_alter':
+    'prefix': 'hook_install_tasks_alter'
+    'body': '/**\n * Implements hook_install_tasks_alter().\n */\nfunction $1_install_tasks_alter(&\$tasks, \$install_state) {\n  // Replace the "Choose language" installation task provided by Drupal core\n  // with a custom callback function defined by this installation profile.\n  /*\n   *\$tasks[\'install_select_locale\'][\'function\'] = \'myprofile_locale_selection\';\n   */\n  \$tasks[\'${1}\'][\'${2}\'] = \'${3}\';\n}'

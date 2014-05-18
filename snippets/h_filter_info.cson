@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_filter_info':
+    'prefix': 'h_filter_info'
+    'body': '/**\n * Implements hook_filter_info().\n */\nfunction $1_filter_info() {\n  \$filters[\'${1}\'] = array(\n    \'title\' => t(\'${2}\'),\n    \'description\' => t(\'${3}\'),\n    \'process callback\' => \'${4}\',\n    \'settings callback\' => \'${5}\',\n    \'default settings\' => array(\n      \'allowed_html\' => \'${6}\',\n      \'filter_html_help\' => ${7},\n      \'filter_html_nofollow\' => ${8},\n    ),\n    \'tips callback\' => \'${9}\',\n  );\n  return \$filters;\n}'

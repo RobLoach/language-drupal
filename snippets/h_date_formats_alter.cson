@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_date_formats_alter':
+    'prefix': 'h_date_formats_alter'
+    'body': '/**\n * Implements hook_date_formats_alter().\n */\nfunction $1_date_formats_alter(&\$formats) {\n  foreach (\$formats as \$id => \$format) {\n    \$formats[\$id][\'${1}\'][] = \'${2}\';\n  }\n}'

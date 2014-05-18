@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_entity_insert':
+    'prefix': 'h_entity_insert'
+    'body': '/**\n * Implements hook_entity_insert().\n */\nfunction $1_entity_insert(\$entity, \$type) {\n  ${1:/* Your code here */}\n}'

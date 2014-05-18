@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_block_view':
+    'prefix': 'h_block_view'
+    'body': '/**\n * Implements hook_block_view().\n */\nfunction $1_block_view(\$delta = \'\') {\n  \$block = array();\n\n  switch (\$delta) {\n    case \'${1}\':\n      \$block[\'subject\'] = t(\'${2}\');\n      \$block[\'content\'] = theme(\'${3}\', array(\'${4}\' =>${5}));\n      break;\n    ${6}\n  }\n  return \$block;\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_mail':
+    'prefix': 'h_mail'
+    'body': '/**\n * Implements hook_mail().\n */\nfunction $1_mail(\$key, &\$message, \$params) {\n   ${1:/* Your code here */}\n}'

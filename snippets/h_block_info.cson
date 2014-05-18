@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_block_info':
+    'prefix': 'h_block_info'
+    'body': '/**\n * Implements hook_block_info().\n */\nfunction $1_block_info() {\n  \$blocks[\'${1}\'] = array(\n    \'info\' => t(\'${2}\'),\n    \'cache\' => ${3}DRUPAL_NO_CACHE\n  );\n\n  return \$blocks;\n}'

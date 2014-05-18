@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_form_alter':
+    'prefix': 'h_form_alter'
+    'body': '/**\n * Implements hook_form_alter().\n */\nfunction $1_form_alter(&\$form, &\$form_state, \$form_id) {\n  \$form[\'${1}\']${2} = array(\n    \'#type\' => \'${3}\',\n    \'#title\' => t(\'${4}\'),\n    \'#default_value\' => \$settings[\'${5}\'],\n    \'#required\' => ${6},\n    \'#element_validate\' => array(\'${7}\'),\n    \'#description\' => t(\'${8}\'),${9}\n  );\n}'

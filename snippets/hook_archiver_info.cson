@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_archiver_info':
+    'prefix': 'hook_archiver_info'
+    'body': '/**\n * Implements hook_archiver_info().\n */\nfunction $1_archiver_info() {\n  return array(\n    /*\n     *\'tar\' => array(\n     *  \'class\' => \'ArchiverTar\',\n     *  \'extensions\' => array(\'tar\', \'tar.gz\', \'tar.bz2\'),\n     */\n    \'${1}\' => array(\n      \'class\' => \'${2}\',\n      \'extensions\' => array(\'${3}\'${4}),\n    ),\n  );\n}'

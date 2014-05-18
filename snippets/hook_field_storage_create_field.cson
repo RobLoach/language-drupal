@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_storage_create_field':
+    'prefix': 'hook_field_storage_create_field'
+    'body': '/**\n * Implements hook_field_storage_create_field().\n */\nfunction $1_field_storage_create_field(\$field) {\n  /*\n   *\$schema = _field_sql_storage_schema(\$field);\n   *foreach (\$schema as \$name => \$table) {\n   *  db_create_table(\$name, \$table);\n   *}\n   *drupal_get_schema(NULL, TRUE);\n   */\n  ${1:/* Your code here */}\n}'

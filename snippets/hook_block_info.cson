@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_block_info':
+    'prefix': 'hook_block_info'
+    'body': '/**\n * Implements hook_block_info().\n */\nfunction $1_block_info() {\n  // This example comes from node.module.\n  /*\n   *\$blocks[\'syndicate\'] = array(\n   *  \'info\' => t(\'Syndicate\'),\n   *  \'cache\' => DRUPAL_NO_CACHE\n   *);\n   */\n  \$blocks[\'${1}\'] = array(\n    \'info\' => t(\'${2}\'),\n    \'cache\' => ${3}DRUPAL_NO_CACHE\n  );\n\n  return \$blocks;\n}'

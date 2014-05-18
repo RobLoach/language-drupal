@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_cron_queue_info_alter':
+    'prefix': 'hook_cron_queue_info_alter'
+    'body': '/**\n * Implements hook_cron_queue_info_alter().\n */\nfunction $1_cron_queue_info_alter(&\$queues) {\n  // This site has many feeds so let\'s spend 90 seconds on each cron run\n  // updating feeds instead of the default 60.\n  /*\n   *\$queues[\'aggregator_feeds\'][\'time\'] = 90;\n   */\n  \$queues[\'${1}\'][\'time\'] = ${2};\n}'

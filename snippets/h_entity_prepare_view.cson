@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_entity_prepare_view':
+    'prefix': 'h_entity_prepare_view'
+    'body': '/**\n * Implements hook_entity_prepare_view().\n */\nfunction $1_entity_prepare_view(\$entities, \$type) {\n  ${1:/* Your code here */}\n}'

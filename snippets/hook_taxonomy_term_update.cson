@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_taxonomy_term_update':
+    'prefix': 'hook_taxonomy_term_update'
+    'body': '/**\n * Implements hook_taxonomy_term_update().\n */\nfunction $1_taxonomy_term_update(\$term) {\n  /*\n   *hook_taxonomy_term_delete(\$term);\n   *if (!empty(\$term->synonyms)) {\n   *  foreach (explode ("\n", str_replace("\r", \'\', \$term->synonyms)) as \$synonym) {\n   *    if (\$synonym) {\n   *      db_insert(\'taxonomy_term_synonym\')\n   *      ->fields(array(\n   *        \'tid\' => \$term->tid,\n   *        \'name\' => rtrim(\$synonym),\n   *      ))\n   *      ->execute();\n   *    }\n   *  }\n   *}\n   */\n  ${1:/* Your code here */}\n}'

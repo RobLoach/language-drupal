@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_token_info':
+    'prefix': 'h_token_info'
+    'body': '/**\n * Implements hook_token_info().\n */\nfunction $1_token_info() {\n  \$type = array(\n    \'name\' => t(\'${1}\'),\n    \'description\' => t(\'${2}\'),\n    \'needs-data\' => \'${3}\',\n  );\n  $${4}[\'${5}\'] = array(\n    \'name\' => t("${6}"),\n    \'description\' => t("${7}"),\n  );\n  return array(\n    \'types\' => array(\'${8}\' => \$type),\n    \'tokens\' => array(\'${9}\' => $${10}),\n  );\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_stream_wrappers':
+    'prefix': 'h_stream_wrappers'
+    'body': '/**\n * Implements hook_stream_wrappers().\n */\nfunction $1_stream_wrappers() {\n  return array(\n     \'${1}\' => array(\n      \'name\' => t(\'${2}\'),\n      \'class\' => \'${3}\',\n      \'description\' => t(\'${4}\'),\n    ),\n    )\n  );\n}'

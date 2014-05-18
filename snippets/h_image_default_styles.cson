@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_image_default_styles':
+    'prefix': 'h_image_default_styles'
+    'body': '/**\n * Implements hook_image_default_styles().\n */\nfunction $1_image_default_styles() {\n  \$styles = array();\n\n  \$styles[\'${1}\'] = array(\n    \'effects\' => array(\n      array(\n        \'name\' => \'${2}\',\n        \'data\' => array(\'width\' => ${3}, \'height\' => ${4}, \'upscale\' => ${5}),\n        \'weight\' => ${6},\n      ),\n    ),\n  );\n\n  return \$styles;\n}'

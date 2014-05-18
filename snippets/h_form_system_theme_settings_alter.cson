@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_form_system_theme_settings_alter':
+    'prefix': 'h_form_system_theme_settings_alter'
+    'body': '/**\n * Implements hook_form_system_theme_settings_alter().\n */\nfunction $1_form_system_theme_settings_alter(&\$form, &\$form_state) {\n  \$form[\'${1}\']${2} = array(\n    \'#type\' => \'${3}\',\n    \'#title\' => t(\'${4}\'),\n    \'#default_value\' => theme_get_setting(\'${5}\'),\n    \'#description\'   => t(\'${6}\'),\n  );\n}'

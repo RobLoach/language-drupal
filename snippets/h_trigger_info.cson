@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_trigger_info':
+    'prefix': 'h_trigger_info'
+    'body': '/**\n * Implements hook_trigger_info().\n */\nfunction $1_trigger_info() {\n  return array(\n    \'${1}\' => array(\n      \'${2}\' => array(\n        \'label\' => t(\'${3}\'),\n      ),\n    ),\n  );\n}'

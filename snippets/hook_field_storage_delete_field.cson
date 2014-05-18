@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_storage_delete_field':
+    'prefix': 'hook_field_storage_delete_field'
+    'body': '/**\n * Implements hook_field_storage_delete_field().\n */\nfunction $1_field_storage_delete_field(\$field) {\n  // Mark all data associated with the field for deletion.\n  /*\n   *\$field[\'deleted\'] = 0;\n   *\$table = _field_sql_storage_tablename(\$field);\n   *\$revision_table = _field_sql_storage_revision_tablename(\$field);\n   *db_update(\$table)\n   *  ->fields(array(\'deleted\' => 1))\n   *  ->execute();\n   */\n  // Move the table to a unique name while the table contents are being deleted.\n  /*\n   *\$field[\'deleted\'] = 1;\n   *\$new_table = _field_sql_storage_tablename(\$field);\n   *\$revision_new_table = _field_sql_storage_revision_tablename(\$field);\n   *db_rename_table(\$table, \$new_table);\n   *db_rename_table(\$revision_table, \$revision_new_table);\n   *drupal_get_schema(NULL, TRUE);\n   */\n  ${1:/* Your code here */}\n}'

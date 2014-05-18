@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_search_access':
+    'prefix': 'h_search_access'
+    'body': '/**\n * Implements hook_search_access().\n */\nfunction $1_search_access() {\n  ${1:/* Your code here */}\n}'

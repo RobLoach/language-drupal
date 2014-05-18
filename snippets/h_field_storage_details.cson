@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_storage_details':
+    'prefix': 'h_field_storage_details'
+    'body': '/**\n * Implements hook_field_storage_details().\n */\nfunction $1_field_storage_details(\$field) {\n  \$details = array();\n  ${1:/* Your code here */}\n}'

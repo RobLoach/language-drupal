@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_mail_alter':
+    'prefix': 'h_mail_alter'
+    'body': '/**\n * Implements hook_mail_alter().\n */\nfunction $1_mail_alter(&\$message) {\n  if (\$message[\'id\'] == \'${1}\') {\n    \$message[\'body\'][] = "${2}";\n  }\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_update_field':
+    'prefix': 'hook_field_update_field'
+    'body': '/**\n * Implements hook_field_update_field().\n */\nfunction $1_field_update_field(\$field, \$prior_field, \$has_data) {\n  // Reset the static value that keeps track of allowed values for list fields.\n  /*\n   *drupal_static_reset(\'list_allowed_values\');\n   */\n  ${1:/* Your code here */}\n}'

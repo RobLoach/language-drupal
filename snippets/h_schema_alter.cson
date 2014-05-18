@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_schema_alter':
+    'prefix': 'h_schema_alter'
+    'body': '/**\n * Implements hook_schema_alter().\n */\nfunction $1_schema_alter(&\$schema) {\n  ${1:/* Your code here */}\n}'

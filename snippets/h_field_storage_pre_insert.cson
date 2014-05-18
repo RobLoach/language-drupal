@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_storage_pre_insert':
+    'prefix': 'h_field_storage_pre_insert'
+    'body': '/**\n * Implements hook_field_storage_pre_insert().\n */\nfunction $1_field_storage_pre_insert(\$entity_type, \$entity, &\$skip_fields) {\n  ${1:/* Your code here */}\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_form':
+    'prefix': 'h_form'
+    'body': '/**\n * Implements hook_form().\n */\nfunction $1_form(\$node, &\$form_state) {\n  \$type = node_type_get_type(\$node);\n\n  \$form[\'${1}\']${2} = array(\n    \'#type\' => \'${3}\',\n    \'#title\' => t(\'${4}\'),\n    \'#default_value\' => ${5},${6}\n  );\n\n  return \$form;\n}'

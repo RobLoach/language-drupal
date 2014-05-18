@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_admin_paths_alter':
+    'prefix': 'hook_admin_paths_alter'
+    'body': '/**\n * Implements hook_admin_paths_alter().\n */\nfunction $1_admin_paths_alter(&\$paths) {\n  // Treat all user pages as administrative.\n  /*\n   *\$paths[\'user\'] = TRUE;\n   *\$paths[\'user/*\'] = TRUE;\n   */\n  // Treat the forum topic node form as a non-administrative page.\n  /*\n   *\$paths[\'node/add/forum\'] = FALSE;\n   */\n  \$paths[\'${1}\'] = ${2};\n}'

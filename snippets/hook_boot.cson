@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_boot':
+    'prefix': 'hook_boot'
+    'body': '/**\n * Implements hook_boot().\n */\nfunction $1_boot() {\n  // we need user_access() in the shutdown function. make sure it gets loaded\n  /*\n   *drupal_load(\'module\', \'user\');\n   *drupal_register_shutdown_function(\'devel_shutdown\');\n   */\n   ${1:/* Your code here */}\n}'

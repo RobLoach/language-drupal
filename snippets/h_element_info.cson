@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_element_info':
+    'prefix': 'h_element_info'
+    'body': '/**\n * Implements hook_element_info().\n */\nfunction $1_element_info() {\n  \$types[\'${1}\'] = array(\n    ${2:/* Your code here */}\n  );\n  return \$types;\n}'

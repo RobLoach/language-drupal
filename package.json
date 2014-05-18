@@ -1,0 +1,41 @@
+{
+  "title": "Drupal support in Atom",
+  "name": "language-drupal",
+  "version": "0.1.0",
+  "description": "[Drupal](http://drupal.org) syntax highlighting and snippets for Atom.",
+  "keywords": [
+    "Drupal",
+    "Atom"
+  ],
+  "badges": {
+    "npm": false,
+    "david": false,
+    "daviddev": false,
+    "travis": false
+  },
+  "license": {
+    "type": "MIT"
+  },
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "http://github.com/RobLoach/language-drupal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RobLoach/language-drupal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RobLoach/language-drupal/issues"
+  },
+  "author": "2014+ Rob Loach (http://robloach.net)",
+  "devDependencies": {
+    "projectz": "^0.3.13"
+  },
+  "maintainers": [
+    "Rob Loach (http://robloach.net)"
+  ],
+  "contributors": [
+    "RobLoach (https://github.com/RobLoach)"
+  ]
+}

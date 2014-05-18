@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_taxonomy_vocabulary_insert':
+    'prefix': 'hook_taxonomy_vocabulary_insert'
+    'body': '/**\n * Implements hook_taxonomy_vocabulary_insert().\n */\nfunction $1_taxonomy_vocabulary_insert(\$vocabulary) {\n  /*\n   *if (\$vocabulary->synonyms) {\n   *  variable_set(\'taxonomy_\' . \$vocabulary->vid . \'_synonyms\', TRUE);\n   *}\n   */\n  ${1:/* Your code here */}\n}'

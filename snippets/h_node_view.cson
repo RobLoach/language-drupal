@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_node_view':
+    'prefix': 'h_node_view'
+    'body': '/**\n * Implements hook_node_view().\n */\nfunction $1_node_view(\$node, \$view_mode, \$langcode) {\n  ${1:/* Your code here */}\n}'

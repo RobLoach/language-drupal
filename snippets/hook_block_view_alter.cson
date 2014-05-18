@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_block_view_alter':
+    'prefix': 'hook_block_view_alter'
+    'body': '/**\n * Implements hook_block_view_alter().\n */\nfunction $1_block_view_alter(&\$data, \$block) {\n  // Remove the contextual links on all blocks that provide them.\n  /*\n   *if (is_array(\$data[\'content\']) && isset(\$data[\'content\'][\'#contextual_links\'])) {\n   *  unset(\$data[\'content\'][\'#contextual_links\']);\n   *}\n   */\n  // Add a theme wrapper function defined by the current module to all blocks\n  // provided by the "somemodule" module.\n  /*\n   *if (is_array(\$data[\'content\']) && \$block->module == \'somemodule\') {\n   *  \$data[\'content\'][\'#theme_wrappers\'][] = \'mymodule_special_block\';\n   *}\n   */\n  ${1:/* Your code here */}\n}'

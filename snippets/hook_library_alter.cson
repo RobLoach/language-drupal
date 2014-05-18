@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_library_alter':
+    'prefix': 'hook_library_alter'
+    'body': '/**\n * Implements hook_library_alter().\n */\nfunction $1_library_alter(&\$libraries, \$module) {\n  // Update Farbtastic to version 2.0.\n  /*\n   *if (\$module == \'system\' && isset(\$libraries[\'farbtastic\'])) {\n   *  // Verify existing version is older than the one we are updating to.\n   *  if (version_compare(\$libraries[\'farbtastic\'][\'version\'], \'2.0\', \'<\')) {\n   *    // Update the existing Farbtastic to version 2.0.\n   *    \$libraries[\'farbtastic\'][\'version\'] = \'2.0\';\n   *    \$libraries[\'farbtastic\'][\'js\'] = array(\n   *      drupal_get_path(\'module\', \'farbtastic_update\') . \'/farbtastic-2.0.js\' => array(),\n   *    );\n   *  }\n   *}\n   */\n  ${1:/* Your code here */}\n}'

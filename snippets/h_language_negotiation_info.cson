@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_language_negotiation_info':
+    'prefix': 'h_language_negotiation_info'
+    'body': '/**\n * Implements hook_language_negotiation_info().\n */\nfunction $1_language_negotiation_info() {\n  return array(\n    \'${1}\' => array(\n      \'callbacks\' => array(\n        \'language\' => \'${2}\',\n        \'switcher\' => \'${3}\',\n        \'url_rewrite\' => \'${4}\',\n      ),\n      \'file\' => drupal_get_path(\'module\', \'${5}\') . \'/${6}\',\n      \'weight\' => ${7},\n      \'types\' => array(\'${8}\'),\n      \'name\' => t(\'${9}\'),\n      \'description\' => t(\'${10}\'),\n      \'cache\' => ${11},\n    ),\n  );\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_archiver_info_alter':
+    'prefix': 'hook_archiver_info_alter'
+    'body': '/**\n * Implements hook_archiver_info_alter().\n */\nfunction $1_archiver_info_alter(&\$info) {\n  /*\n   *\$info[\'tar\'][\'extensions\'][] = \'tgz\';\n   */\n  \$info[\'${1}\'][\'${2}\'][] = \'${3}\';\n}'

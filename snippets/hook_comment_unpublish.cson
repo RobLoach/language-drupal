@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_comment_unpublish':
+    'prefix': 'hook_comment_unpublish'
+    'body': '/**\n * Implements hook_comment_unpublish().\n */\nfunction $1_comment_unpublish(\$comment) {\n  /*\n   *drupal_set_message(t(\'Comment: @subject has been unpublished\', array(\'@subject\' => \$comment->subject)));\n   */\n  ${1:/* Your code here */}\n}'

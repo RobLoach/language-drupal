@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_validate':
+    'prefix': 'hook_field_validate'
+    'body': '/**\n * Implements hook_field_validate().\n */\nfunction $1_field_validate(\$entity_type, \$entity, \$field, \$instance, \$langcode, \$items, &\$errors) {\n  foreach (\$items as \$delta => \$item) {\n    if (!empty(\$item[\'value\'])) {\n      /*\n       *if (!empty(\$field[\'settings\'][\'max_length\']) && drupal_strlen(\$item[\'value\']) > \$field[\'settings\'][\'max_length\']) {\n       *  \$errors[\$field[\'field_name\']][\$delta][] = array(\n       *    \'error\' => \'text_max_length\',\n       *    \'message\' => t(\'%name: the value may not be longer than %max characters.\', array(\'%name\' => \$instance[\'label\'], \'%max\' => \$field[\'settings\'][\'max_length\'])),\n       *  );\n       *}\n       */\n      ${1:/* Your code here */}\n    }\n  }\n}'

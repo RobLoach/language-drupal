@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_custom_theme':
+    'prefix': 'h_custom_theme'
+    'body': '/**\n * Implements hook_custom_theme().\n */\nfunction $1_custom_theme() {\n  ${1:/* Your code here */}\n}'

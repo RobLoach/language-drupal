@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_storage_load':
+    'prefix': 'h_field_storage_load'
+    'body': '/**\n * Implements hook_field_storage_load().\n */\nfunction $1_field_storage_load(\$entity_type, &\$entities, \$age, \$fields, \$options) {\n  ${1:/* Your code here */}\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_menu_link_insert':
+    'prefix': 'h_menu_link_insert'
+    'body': '/**\n * Implements hook_menu_link_insert().\n */\nfunction $1_menu_link_insert(\$link) {\n  ${1:/* Your code here */}\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_node_update':
+    'prefix': 'h_node_update'
+    'body': '/**\n * Implements hook_node_update().\n */\nfunction $1_node_update(\$node) {\n  db_update(\'${1}\')\n    ->fields(array(\'${2}\' => ${3})\n    ->condition(\'nid\', \$node->nid)\n    ->execute();\n}'

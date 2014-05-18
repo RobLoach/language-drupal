@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_page_delivery_callback_alter':
+    'prefix': 'hook_page_delivery_callback_alter'
+    'body': '/**\n * Implements hook_page_delivery_callback_alter().\n */\nfunction $1_page_delivery_callback_alter(&\$callback) {\n  // jQuery sets a HTTP_X_REQUESTED_WITH header of \'XMLHttpRequest\'.\n  // If a page would normally be delivered as an html page, and it is called\n  // from jQuery, deliver it instead as an AJAX response.\n  /*\n   *if (isset(\$_SERVER[\'HTTP_X_REQUESTED_WITH\']) && \$_SERVER[\'HTTP_X_REQUESTED_WITH\'] == \'XMLHttpRequest\' && \$callback == \'drupal_deliver_html_page\') {\n   *  \$callback = \'ajax_deliver\';\n   *}\n   */\n  ${1:/* Your code here */}\n}'

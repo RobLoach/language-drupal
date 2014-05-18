@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_attach_load':
+    'prefix': 'h_field_attach_load'
+    'body': '/**\n * Implements hook_field_attach_load().\n */\nfunction $1_field_attach_load(\$entity_type, &\$entities, \$age, \$options) {\n  ${1:/* Your code here */}\n}'

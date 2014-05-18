@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_search_preprocess':
+    'prefix': 'hook_search_preprocess'
+    'body': '/**\n * Implements hook_search_preprocess().\n */\nfunction $1_search_preprocess(\$text) {\n  // Do processing on \$text\n  /*\n   *return \$text;\n   */\n  ${1:/* Your code here */}\n}'

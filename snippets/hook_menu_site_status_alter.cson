@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_menu_site_status_alter':
+    'prefix': 'hook_menu_site_status_alter'
+    'body': '/**\n * Implements hook_menu_site_status_alter().\n */\nfunction $1_menu_site_status_alter(&\$menu_site_status, \$path) {\n  // Allow access to my_module/authentication even if site is in offline mode.\n  /*\n   *if (\$menu_site_status == MENU_SITE_OFFLINE && user_is_anonymous() && \$path == \'my_module/authentication\') {\n   *  \$menu_site_status = MENU_SITE_ONLINE;\n   *}\n   */\n  ${1:/* Your code here */}\n}'

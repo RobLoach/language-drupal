@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_comment_insert':
+    'prefix': 'h_comment_insert'
+    'body': '/**\n * Implements hook_comment_insert().\n */\nfunction $1_comment_insert(\$comment) {\n  ${1:/* Your code here */}\n}'

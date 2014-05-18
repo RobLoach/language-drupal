@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_menu_link_delete':
+    'prefix': 'h_menu_link_delete'
+    'body': '/**\n * Implements hook_menu_link_delete().\n */\nfunction $1_menu_link_delete(\$link) {\n  db_delete(\'${1}\')\n    ->condition(\'mlid\', \$link[\'mlid\'])\n    ->execute();\n}'

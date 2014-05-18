@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_block_configure':
+    'prefix': 'h_block_configure'
+    'body': '/**\n * Implements hook_block_configure().\n */\nfunction $1_block_configure(\$delta = \'\') {\n  \$form = array();\n  if (\$delta == \'${1}\') {\n    \$form[\'${2}\']${3} = array(\n      \'#type\' => \'${4}\',\n      \'#title\' => t(\'${5}\'),\n      \'#default_value\' => variable_get(\'${6}\', ${7}),${8}\n    );\n  }\n  return \$form;\n}'

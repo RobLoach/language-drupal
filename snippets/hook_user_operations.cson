@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_user_operations':
+    'prefix': 'hook_user_operations'
+    'body': '/**\n * Implements hook_user_operations().\n */\nfunction $1_user_operations() {\n  \$operations = array(\n    /*\n     *\'unblock\' => array(\n     *  \'label\' => t(\'Unblock the selected users\'),\n     *  \'callback\' => \'user_user_operations_unblock\',\n     *),\n     */\n    \'${1}\' => array(\n      \'label\' => t(\'${2}\'),\n      \'callback\' => \'${3}\',\n    ),\n  );\n  return \$operations;\n}'

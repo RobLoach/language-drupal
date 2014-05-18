@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_path_delete':
+    'prefix': 'h_path_delete'
+    'body': '/**\n * Implements hook_path_delete().\n */\nfunction $1_path_delete(\$path) {\n  ${1:/* Your code here */}\n}'

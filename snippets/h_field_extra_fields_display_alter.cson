@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_extra_fields_display_alter':
+    'prefix': 'h_field_extra_fields_display_alter'
+    'body': '/**\n * Implements hook_field_extra_fields_display_alter().\n */\nfunction $1_field_extra_fields_display_alter(&\$displays, \$context) {\n  ${1:/* Your code here */}\n}'

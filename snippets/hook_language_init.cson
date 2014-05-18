@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_language_init':
+    'prefix': 'hook_language_init'
+    'body': '/**\n * Implements hook_language_init().\n */\nfunction $1_language_init() {\n  global \$language, \$conf;\n\n  switch (\$language->language) {\n    /*\n     *case \'it\':\n     *  \$conf[\'site_name\'] = \'Il mio sito Drupal\';\n     *  break;\n     */\n    case \'${1}\':\n      \$conf[\'${2}\'] = \'${3}\';\n      break;\n  }\n}'

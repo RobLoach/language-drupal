@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_date_formats':
+    'prefix': 'h_date_formats'
+    'body': '/**\n * Implements hook_date_formats().\n */\nfunction $1_date_formats() {\n  return array(\n    array(\n      \'type\' => \'${1}\',\n      \'format\' => \'${2}\',\n      \'locales\' => array(\'${3}\'),\n    ),\n  );\n}'

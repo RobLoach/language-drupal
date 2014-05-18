@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_comment_view_alter':
+    'prefix': 'h_comment_view_alter'
+    'body': '/**\n * Implements hook_comment_view_alter().\n */\nfunction $1_comment_view_alter(&\$build) {\n  ${1:/* Your code here */}\n}'

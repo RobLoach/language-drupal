@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_url_inbound_alter':
+    'prefix': 'h_url_inbound_alter'
+    'body': '/**\n * Implements hook_url_inbound_alter().\n */\nfunction $1_url_inbound_alter(&\$path, \$original_path, \$path_language) {\n  ${1:/* Your code here */}\n}'

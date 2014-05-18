@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_rdf_namespaces':
+    'prefix': 'hook_rdf_namespaces'
+    'body': '/**\n * Implements hook_rdf_namespaces().\n */\nfunction $1_rdf_namespaces() {\n  return array(\n    /*\n     *\'content\'  => \'http://purl.org/rss/1.0/modules/content/\',\n     *\'dc\'       => \'http://purl.org/dc/terms/\',\n     *\'foaf\'     => \'http://xmlns.com/foaf/0.1/\',\n     *\'og\'       => \'http://ogp.me/ns#\',\n     *\'rdfs\'     => \'http://www.w3.org/2000/01/rdf-schema#\',\n     *\'sioc\'     => \'http://rdfs.org/sioc/ns#\',\n     *\'sioct\'    => \'http://rdfs.org/sioc/types#\',\n     *\'skos\'     => \'http://www.w3.org/2004/02/skos/core#\',\n     *\'xsd\'      => \'http://www.w3.org/2001/XMLSchema#\',\n     */\n    \'${1}\'  => \'${2}\',\n  );\n}'

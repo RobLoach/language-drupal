@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_node_access_records':
+    'prefix': 'h_node_access_records'
+    'body': '/**\n * Implements hook_node_access_records().\n */\nfunction $1_node_access_records(\$node) {\n    \$grants[] = array(\n      \'realm\' => \'${1}\',\n      \'gid\' => ${2},\n      \'grant_view\' => ${3},\n      \'grant_update\' => ${4},\n      \'grant_delete\' => ${5},\n      \'priority\' => ${6},\n    );\n\n    return \$grants;\n  }\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_formatter_settings_form':
+    'prefix': 'h_field_formatter_settings_form'
+    'body': '/**\n * Implements hook_field_formatter_settings_form().\n */\nfunction $1_field_formatter_settings_form(\$field, \$instance, \$view_mode, \$form, &\$form_state) {\n  \$display = \$instance[\'display\'][\$view_mode];\n  \$settings = \$display[\'settings\'];\n  \$element[\'${1}\'] = array(\n    \'#type\' => \'${2}\',\n    \'#title\' => t(\'${3}\'),\n    \'#default_value\' => \$settings[\'${4}\'],\n    \'#required\' => ${5},\n    \'#element_validate\' => array(\'${6}\'),\n    \'#description\' => t(\'${7}\'),\n    \'#${8}\' => ${9}\n  );\n\n  return \$element;\n\n}'

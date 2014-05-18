@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_language_init':
+    'prefix': 'h_language_init'
+    'body': '/**\n * Implements hook_language_init().\n */\nfunction $1_language_init() {\n  global \$language, \$conf;\n\n  switch (\$language->language) {\n    case \'${1}\':\n      \$conf[\'${2}\'] = \'${3}\';\n      break;\n  }\n}'

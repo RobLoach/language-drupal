@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_language_fallback_candidates_alter':
+    'prefix': 'hook_language_fallback_candidates_alter'
+    'body': '/**\n * Implements hook_language_fallback_candidates_alter().\n */\nfunction $1_language_fallback_candidates_alter(array &\$fallback_candidates) {\n  /*\n   *\$fallback_candidates = array_reverse(\$fallback_candidates);\n   */\n  ${1:/* Your code here */}\n}'

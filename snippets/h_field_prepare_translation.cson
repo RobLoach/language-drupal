@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_prepare_translation':
+    'prefix': 'h_field_prepare_translation'
+    'body': '/**\n * Implements hook_field_prepare_translation().\n */\nfunction $1_field_prepare_translation(\$entity_type, \$entity, \$field, \$instance, \$langcode, &\$items, \$source_entity, \$source_langcode) {\n  ${1:/* Your code here */}\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_modules_installed':
+    'prefix': 'hook_modules_installed'
+    'body': '/**\n * Implements hook_modules_installed().\n */\nfunction $1_modules_installed(\$modules) {\n  /*\n   *if (in_array(\'lousy_module\', \$modules)) {\n   *  variable_set(\'lousy_module_conflicting_variable\', FALSE);\n   *}\n   */\n  ${1:/* Your code here */}\n}'

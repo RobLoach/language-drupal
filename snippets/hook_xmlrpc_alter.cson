@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_xmlrpc_alter':
+    'prefix': 'hook_xmlrpc_alter'
+    'body': '/**\n * Implements hook_xmlrpc_alter().\n */\nfunction $1_xmlrpc_alter(&\$methods) {\n  // Directly change a simple method.\n  /*\n   *\$methods[\'drupal.login\'] = \'mymodule_login\';\n   */\n  // Alter complex definitions.\n  /*\n   *foreach (\$methods as \$key => &\$method) {\n   *  // Skip simple method definitions.\n   *  if (!is_int(\$key)) {\n   *    continue;\n   *  }\n   *  // Perform the wanted manipulation.\n   *  if (\$method[0] == \'drupal.site.ping\') {\n   *    \$method[1] = \'mymodule_directory_ping\';\n   *  }\n   *}\n   */\n  ${1:/* Your code here */}\n}'

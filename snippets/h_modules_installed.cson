@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_modules_installed':
+    'prefix': 'h_modules_installed'
+    'body': '/**\n * Implements hook_modules_installed().\n */\nfunction $1_modules_installed(\$modules) {\n  ${1:/* Your code here */}\n}'

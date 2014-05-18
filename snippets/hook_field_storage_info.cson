@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_storage_info':
+    'prefix': 'hook_field_storage_info'
+    'body': '/**\n * Implements hook_field_storage_info().\n */\nfunction $1_field_storage_info() {\n  return array(\n    /*\n     *\'field_sql_storage\' => array(\n     *  \'label\' => t(\'Default SQL storage\'),\n     *  \'description\' => t(\'Stores fields in the local SQL database, using per-field tables.\'),\n     *  \'settings\' => array(),\n     *),\n     */\n    \'${1}\' => array(\n      \'label\' => t(\'${2}\'),\n      \'description\' => t(\'${3}\'),\n      \'settings\' => array(\'${4}\'${5}),\n    ),\n  );\n}'

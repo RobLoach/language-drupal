@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_exit':
+    'prefix': 'h_exit'
+    'body': '/**\n * Implements hook_exit().\n */\nfunction $1_exit(\$destination = NULL) {\n  ${1:/* Your code here */}\n}'

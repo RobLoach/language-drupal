@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_formatter_info':
+    'prefix': 'h_field_formatter_info'
+    'body': '/**\n * Implements hook_field_formatter_info().\n */\nfunction $1_field_formatter_info() {\n  return array(\n    \'${1}\' => array(\n      \'label\' => t(\'${2}\'),\n      \'field types\' => array(\'${3}\'),\n    ),\n  );\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_image_style_flush':
+    'prefix': 'h_image_style_flush'
+    'body': '/**\n * Implements hook_image_style_flush().\n */\nfunction $1_image_style_flush(\$style) {\n  ${1:/* Your code here */}\n}'

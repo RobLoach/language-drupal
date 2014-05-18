@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_install_tasks_alter':
+    'prefix': 'h_install_tasks_alter'
+    'body': '/**\n * Implements hook_install_tasks_alter().\n */\nfunction $1_install_tasks_alter(&\$tasks, \$install_state) {\n  \$tasks[\'${1}\'][\'${2}\'] = \'${3}\';\n}'

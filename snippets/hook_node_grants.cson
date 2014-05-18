@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_node_grants':
+    'prefix': 'hook_node_grants'
+    'body': '/**\n * Implements hook_node_grants().\n */\nfunction $1_node_grants(\$account, \$op) {\n  /*\n   *if (user_access(\'access private content\', \$account)) {\n   *  \$grants[\'example\'] = array(1);\n   *}\n   *\$grants[\'example_owner\'] = array(\$account->uid);\n   */\n  ${1:/* Your code here */}\n\n  return \$grants;\n}'

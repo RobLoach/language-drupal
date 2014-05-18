@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_menu_link_alter':
+    'prefix': 'hook_menu_link_alter'
+    'body': '/**\n * Implements hook_menu_link_alter().\n */\nfunction $1_menu_link_alter(&\$item) {\n  // Example 1 - make all new admin links hidden (a.k.a disabled).\n  /*\n   *if (strpos(\$item[\'link_path\'], \'admin\') === 0 && empty(\$item[\'mlid\'])) {\n   *  \$item[\'hidden\'] = 1;\n   *}\n   */\n  // Example 2  - flag a link to be altered by hook_translated_menu_link_alter()\n  /*\n   *if (\$item[\'link_path\'] == \'devel/cache/clear\') {\n   *  \$item[\'options\'][\'alter\'] = TRUE;\n   *}\n   */\n  ${1:/* Your code here */}\n}'

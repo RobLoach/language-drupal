@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_file_validate':
+    'prefix': 'h_file_validate'
+    'body': '/**\n * Implements hook_file_validate().\n */\nfunction $1_file_validate(&\$file) {\n  \$errors = array();\n  if (${1}) {\n    \$errors[] = t("${2}");\n  }\n\n  return \$errors;\n}'

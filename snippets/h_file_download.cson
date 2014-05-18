@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_file_download':
+    'prefix': 'h_file_download'
+    'body': '/**\n * Implements hook_file_download().\n */\nfunction $1_file_download(\$uri) {\n  ${1:/* Your code here */}\n}'

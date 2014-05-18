@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_search_reset':
+    'prefix': 'hook_search_reset'
+    'body': '/**\n * Implements hook_search_reset().\n */\nfunction $1_search_reset() {\n  /*\n   *db_update(\'search_dataset\')\n   *  ->fields(array(\'reindex\' => REQUEST_TIME))\n   *  ->condition(\'type\', \'node\')\n   *  ->execute();\n   */\n  ${1:/* Your code here */}\n}'

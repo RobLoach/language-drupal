@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_disable':
+    'prefix': 'hook_disable'
+    'body': '/**\n * Implements hook_disable().\n */\nfunction $1_disable() {\n  /*\n   *mymodule_cache_rebuild();\n   */\n  ${1:/* Your code here */}\n}'

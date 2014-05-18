@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_user_cancel':
+    'prefix': 'h_user_cancel'
+    'body': '/**\n * Implements hook_user_cancel().\n */\nfunction $1_user_cancel(\$edit, \$account, \$method) {\n  switch (\$method) {\n    case \'${1}\':\n      ${2:/* Your code here */}\n      break;\n  }\n}'

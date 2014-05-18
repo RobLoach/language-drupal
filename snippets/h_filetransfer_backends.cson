@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_filetransfer_backends':
+    'prefix': 'h_filetransfer_backends'
+    'body': '/**\n * Implements hook_filetransfer_backends().\n */\nfunction $1_filetransfer_backends() {\n  \$backends = array();\n  ${1:/* Your code here */}\n  return \$backends;\n}'

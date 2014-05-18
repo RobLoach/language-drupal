@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_validate':
+    'prefix': 'h_validate'
+    'body': '/**\n * Implements hook_validate().\n */\nfunction $1_validate(\$node, \$form, &\$form_state) {\n  ${1:/* Your code here */}\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_action_info':
+    'prefix': 'h_action_info'
+    'body': '/**\n * Implements hook_action_info().\n */\nfunction $1_action_info() {\n  return array(\n    \'${1}\' => array(\n      \'type\' => \'${2}\',\n      \'label\' => t(\'${3}\'),\n      \'configurable\' => ${4},\n      \'behavior\' => array(\'${5}\'),\n      \'triggers\' => array(\'${6}\', ${7}),\n    ),\n  );\n}'

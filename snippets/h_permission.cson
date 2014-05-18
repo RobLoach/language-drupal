@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_permission':
+    'prefix': 'h_permission'
+    'body': '/**\n * Implements hook_permission().\n */\nfunction $1_permission() {\n  return array(\n    \'${1}\' =>  array(\n      \'title\' => t(\'${2}\'),\n      \'description\' => t(\'${3}\'),\n    ),\n  );\n}'

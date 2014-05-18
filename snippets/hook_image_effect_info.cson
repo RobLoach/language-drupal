@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_image_effect_info':
+    'prefix': 'hook_image_effect_info'
+    'body': '/**\n * Implements hook_image_effect_info().\n */\nfunction $1_image_effect_info() {\n  \$effects = array();\n\n  \$effects[\'${1}\'] = array(\n    \'label\' => t(\'${2}\'),\n    \'help\' => t(\'${3}\'),\n    \'effect callback\' => \'${4}\',\n    \'form callback\' => \'${5}\',\n    \'summary theme\' => \'${6}\',\n  );\n\n  return \$effects;\n}'

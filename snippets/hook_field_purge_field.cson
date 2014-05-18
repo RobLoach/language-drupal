@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_purge_field':
+    'prefix': 'hook_field_purge_field'
+    'body': '/**\n * Implements hook_field_purge_field().\n */\nfunction $1_field_purge_field(\$field) {\n  db_delete(\'${1}\')\n    ->condition(\'id\', \$field[\'id\'])\n    ->execute();\n}'

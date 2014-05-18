@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_available_languages_alter':
+    'prefix': 'h_field_available_languages_alter'
+    'body': '/**\n * Implements hook_field_available_languages_alter().\n */\nfunction $1_field_available_languages_alter(&\$languages, \$context) {\n  ${1:/* Your code here */}\n}'

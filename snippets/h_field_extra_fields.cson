@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_extra_fields':
+    'prefix': 'h_field_extra_fields'
+    'body': '/**\n * Implements hook_field_extra_fields().\n */\nfunction $1_field_extra_fields() {\n  \$extra[\'${1}\'][\'${2}\'] = array(\n    \'form\' => array(\n      \'${3}\' => array(\n        \'label\' => t(\'${4}\'),\n        \'description\' => t(\'${5}\'),\n        \'weight\' => ${6},\n      ),\n    ),\n    \'display\' => array(\n      \'${7}\' => array(\n        \'label\' => t(\'${8}\'),\n        \'description\' => t(\'${9}\'),\n        \'weight\' => ${10},\n      ),\n    )\n  );\n\n  return \$extra;\n}'

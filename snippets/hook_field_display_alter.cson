@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_display_alter':
+    'prefix': 'hook_field_display_alter'
+    'body': '/**\n * Implements hook_field_display_alter().\n */\nfunction $1_field_display_alter(&\$display, \$context) {\n  // Leave field labels out of the search index.\n  // Note: The check against \$context[\'entity_type\'] == \'node\' could be avoided\n  // by using hook_field_display_node_alter() instead of\n  // hook_field_display_alter(), resulting in less function calls when\n  // rendering non-node entities.\n  /*\n   *if (\$context[\'entity_type\'] == \'node\' && \$context[\'view_mode\'] == \'search_index\') {\n   *  \$display[\'label\'] = \'hidden\';\n   *}\n   */\n  ${1:/* Your code here */}\n}'

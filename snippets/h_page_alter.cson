@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_page_alter':
+    'prefix': 'h_page_alter'
+    'body': '/**\n * Implements hook_page_alter().\n */\nfunction $1_page_alter(&\$page) {\n  ${1:/* Your code here */}\n}'

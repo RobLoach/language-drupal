@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_entity_query_alter':
+    'prefix': 'h_entity_query_alter'
+    'body': '/**\n * Implements hook_entity_query_alter().\n */\nfunction $1_entity_query_alter(\$query) {\n  \$query->${1} = \'$1_query_callback\';\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_language_types_info':
+    'prefix': 'h_language_types_info'
+    'body': '/**\n * Implements hook_language_types_info().\n */\nfunction $1_language_types_info() {\n  return array(\n    \'${1}\' => array(\n      \'name\' => t(\'${2}\'),\n      \'description\' => t(\'${3}\'),\n    ),\n  );\n}'

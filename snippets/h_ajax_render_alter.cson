@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_ajax_render_alter':
+    'prefix': 'h_ajax_render_alter'
+    'body': '/**\n * Implements hook_ajax_render_alter().\n */\nfunction $1_ajax_render_alter(\$commands) {\n  \$commands[] = ${1}\n}'

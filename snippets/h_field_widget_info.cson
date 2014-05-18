@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_widget_info':
+    'prefix': 'h_field_widget_info'
+    'body': '/**\n * Implements hook_field_widget_info().\n */\nfunction $1_field_widget_info() {\n    return array(\n    \'${1}\' => array(\n      \'label\' => t(\'${2}\'),\n      \'field types\' => array(\'${3}\'),\n      \'settings\' => array(\'${4}\' => ${5}),\n      \'behaviors\' => array(\n        \'multiple values\' => ${6}FIELD_BEHAVIOR_DEFAULT,\n        \'default value\' => ${7}FIELD_BEHAVIOR_DEFAULT,\n      ),\n    ),\n  );\n}'

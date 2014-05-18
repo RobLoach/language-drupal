@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_locale':
+    'prefix': 'h_locale'
+    'body': '/**\n * Implements hook_locale().\n */\nfunction $1_locale(\$op = \'groups\') {\n  switch (\$op) {\n    case \'${1}\':\n      return array(\'${2}\' => t(\'${3}\'));\n  }\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_aggregator_process':
+    'prefix': 'h_aggregator_process'
+    'body': '/**\n * Implements hook_aggregator_process().\n */\nfunction $1_aggregator_process(\$feed) {\n  ${1:/* Your code here */}\n}'

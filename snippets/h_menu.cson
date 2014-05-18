@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_menu':
+    'prefix': 'h_menu'
+    'body': '/**\n * Implements hook_menu().\n */\nfunction $1_menu() {\n  \$items[\'${1}\'] = array(\n    \'title\' => \'${2}\',\n    \'page callback\' => \'${3}\',\n    \'page arguments\' => array(${4}),\n    \'access arguments\' => array(\'${5}\'),\n    \'type\' => ${6},\n    \'file\' => ${7},${8}\n  );\n\n  return \$items;\n}'

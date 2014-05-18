@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_image_styles_alter':
+    'prefix': 'hook_image_styles_alter'
+    'body': '/**\n * Implements hook_image_styles_alter().\n */\nfunction $1_image_styles_alter(&\$styles) {\n  // Check that we only affect a default style.\n  /*\n   *if (\$styles[\'thumbnail\'][\'storage\'] == IMAGE_STORAGE_DEFAULT) {\n   *  // Add an additional effect to the thumbnail style.\n   *  \$styles[\'thumbnail\'][\'effects\'][] = array(\n   *    \'name\' => \'image_desaturate\',\n   *    \'data\' => array(),\n   *    \'weight\' => 1,\n   *    \'effect callback\' => \'image_desaturate_effect\',\n   *  );\n   *}\n   */\n  ${1:/* Your code here */}\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_file_insert':
+    'prefix': 'hook_file_insert'
+    'body': '/**\n * Implements hook_file_insert().\n */\nfunction $1_file_insert(\$file) {\n  ${1:/* Your code here */}\n}'

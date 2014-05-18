@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_user_view':
+    'prefix': 'hook_user_view'
+    'body': '/**\n * Implements hook_user_view().\n */\nfunction $1_user_view(\$account, \$view_mode, \$langcode) {\n  /*\n   *if (user_access(\'create blog content\', \$account)) {\n   *  \$account->content[\'summary\'][\'blog\'] =  array(\n   *    \'#type\' => \'user_profile_item\',\n   *    \'#title\' => t(\'Blog\'),\n   *    \'#markup\' => l(t(\'View recent blog entries\'), "blog/\$account->uid", array(\'attributes\' => array(\'title\' => t("Read !username\'s latest blog entries.", array(\'!username\' => format_username(\$account)))))),\n   *    \'#attributes\' => array(\'class\' => array(\'blog\')),\n   *  );\n   *}\n   */\n  ${1:/* Your code here */}\n}'

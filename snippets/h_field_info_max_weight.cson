@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_info_max_weight':
+    'prefix': 'h_field_info_max_weight'
+    'body': '/**\n * Implements hook_field_info_max_weight().\n */\nfunction $1_field_info_max_weight(\$entity_type, \$bundle, \$context) {\n  \$weights = array();\n  ${1:/* Your code here */}\n\n  return \$weights ? max(\$weights) : NULL;\n}'

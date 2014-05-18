@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_date_format_types_alter':
+    'prefix': 'h_date_format_types_alter'
+    'body': '/**\n * Implements hook_date_format_types_alter().\n */\nfunction $1_date_format_types_alter(&\$types) {\n  foreach (\$types as \$type_name => \$type) {\n    \$types[\$type_name][\'${1}\'] = ${2};\n  }\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_taxonomy_term_load':
+    'prefix': 'h_taxonomy_term_load'
+    'body': '/**\n * Implements hook_taxonomy_term_load().\n */\nfunction $1_taxonomy_term_load(\$terms) {\n  ${1:/* Your code here */}\n}'

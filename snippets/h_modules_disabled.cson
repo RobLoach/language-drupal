@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_modules_disabled':
+    'prefix': 'h_modules_disabled'
+    'body': '/**\n * Implements hook_modules_disabled().\n */\nfunction $1_modules_disabled(\$modules) {\n  ${1:/* Your code here */}\n}'

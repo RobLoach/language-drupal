@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_language_types_info':
+    'prefix': 'hook_language_types_info'
+    'body': '/**\n * Implements hook_language_types_info().\n */\nfunction $1_language_types_info() {\n  return array(\n    /*\n     *\'custom_language_type\' => array(\n     *  \'name\' => t(\'Custom language\'),\n     *  \'description\' => t(\'A custom language type.\'),\n     *),\n     *\'fixed_custom_language_type\' => array(\n     *  \'fixed\' => array(\'custom_language_provider\'),\n     *),\n     */\n    \'${1}\' => array(\n      \'name\' => t(\'${2}\'),\n      \'description\' => t(\'${3}\'),\n    ),\n  );\n}'

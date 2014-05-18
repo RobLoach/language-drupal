@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_theme':
+    'prefix': 'h_theme'
+    'body': '/**\n * Implements hook_theme().\n */\nfunction $1_theme(\$existing, \$type, \$theme, \$path) {\n  return array(\n    \'${1}\' => array(\n      \'render element\' => \'${2}\',\n      \'file\' => \'${3}\',\n      \'variables\' => array(\'${4}\' => NULL, \'${5}\' => NULL${6}),\n    ),\n  );\n}'

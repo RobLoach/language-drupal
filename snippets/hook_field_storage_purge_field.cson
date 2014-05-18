@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_storage_purge_field':
+    'prefix': 'hook_field_storage_purge_field'
+    'body': '/**\n * Implements hook_field_storage_purge_field().\n */\nfunction $1_field_storage_purge_field(\$field) {\n  /*\n   *\$table_name = _field_sql_storage_tablename(\$field);\n   *\$revision_name = _field_sql_storage_revision_tablename(\$field);\n   *db_drop_table(\$table_name);\n   *db_drop_table(\$revision_name);\n   */\n  ${1:/* Your code here */}\n}'

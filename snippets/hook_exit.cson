@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_exit':
+    'prefix': 'hook_exit'
+    'body': '/**\n * Implements hook_exit().\n */\nfunction $1_exit(\$destination = NULL) {\n  /*\n   *db_update(\'counter\')\n   *  ->expression(\'hits\', \'hits + 1\')\n   *  ->condition(\'type\', 1)\n   *  ->execute();\n   */\n  ${1:/* Your code here */}\n}'

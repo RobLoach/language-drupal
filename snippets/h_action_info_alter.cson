@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_action_info_alter':
+    'prefix': 'h_action_info_alter'
+    'body': '/**\n * Implements hook_action_info_alter().\n */\nfunction {$1}_action_info_alter(&\$actions) {\n  \$actions[\'${1}\'][\'${2}\'] = t(\'${3}\');\n}'

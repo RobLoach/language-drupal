@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_user_delete':
+    'prefix': 'hook_user_delete'
+    'body': '/**\n * Implements hook_user_delete().\n */\nfunction $1_user_delete(\$account) {\n  db_delete(\'${1}\')\n    ->condition(\'uid\', \$account->uid)\n    ->execute();\n}'

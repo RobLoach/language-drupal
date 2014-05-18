@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_node_update_index':
+    'prefix': 'h_node_update_index'
+    'body': '/**\n * Implements hook_node_update_index().\n */\nfunction $1_node_update_index(\$node) {\n  ${1:/* Your code here */}\n}'

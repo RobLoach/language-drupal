@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_menu_local_tasks_alter':
+    'prefix': 'h_menu_local_tasks_alter'
+    'body': '/**\n * Implements hook_menu_local_tasks_alter().\n */\nfunction $1_menu_local_tasks_alter(&\$data, \$router_item, \$root_path) {\n  ${1:/* Your code here */}\n}'

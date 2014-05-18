@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_search_status':
+    'prefix': 'h_search_status'
+    'body': '/**\n * Implements hook_search_status().\n */\nfunction $1_search_status() {\n  ${1:/* Your code here */}\n}'

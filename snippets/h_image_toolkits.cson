@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_image_toolkits':
+    'prefix': 'h_image_toolkits'
+    'body': '/**\n * Implements hook_image_toolkits().\n */\nfunction $1_image_toolkits() {\n  return array(\n    \'${1}\' => array(\n      \'title\' => t(\'${2}\'),\n      \'available\' => TRUE,\n    ),\n  );\n}'

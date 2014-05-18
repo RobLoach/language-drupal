@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_widget_error':
+    'prefix': 'hook_field_widget_error'
+    'body': '/**\n * Implements hook_field_widget_error().\n */\nfunction $1_field_widget_error(\$element, \$error, \$form, &\$form_state) {\n  /*\n   *form_error(\$element[\'value\'], \$error[\'message\']);\n   */\n  ${1:/* Your code here */}\n}'

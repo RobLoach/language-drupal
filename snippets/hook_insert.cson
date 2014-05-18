@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_insert':
+    'prefix': 'hook_insert'
+    'body': '/**\n * Implements hook_insert().\n */\nfunction $1_insert(\$node) {\n  db_insert(\'${1}\')\n    ->fields(array(\n      \'nid\' => \$node->nid,\n      \'extra\' => \$node->extra,\n    ))\n    ->execute();\n}'

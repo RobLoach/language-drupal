@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_read_instance':
+    'prefix': 'hook_field_read_instance'
+    'body': '/**\n * Implements hook_field_read_instance().\n */\nfunction $1_field_read_instance(\$instance) {\n  ${1:/* Your code here */}\n}'

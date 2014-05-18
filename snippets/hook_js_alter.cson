@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_js_alter':
+    'prefix': 'hook_js_alter'
+    'body': '/**\n * Implements hook_js_alter().\n */\nfunction $1_js_alter(&\$javascript) {\n  // Swap out jQuery to use an updated version of the library.\n  /*\n   *\$javascript[\'misc/jquery.js\'][\'data\'] = drupal_get_path(\'module\', \'jquery_update\') . \'/jquery.js\';\n   */\n  ${1:/* Your code here */}\n}'

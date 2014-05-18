@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_user_cancel':
+    'prefix': 'hook_user_cancel'
+    'body': '/**\n * Implements hook_user_cancel().\n */\nfunction $1_user_cancel(\$edit, \$account, \$method) {\n  switch (\$method) {\n    /*\n     *case \'user_cancel_block_unpublish\':\n     *  // Unpublish nodes (current revisions).\n     *  module_load_include(\'inc\', \'node\', \'node.admin\');\n     *  \$nodes = db_select(\'node\', \'n\')\n     *    ->fields(\'n\', array(\'nid\'))\n     *    ->condition(\'uid\', \$account->uid)\n     *    ->execute()\n     *    ->fetchCol();\n     *  node_mass_update(\$nodes, array(\'status\' => 0));\n     *  break;\n     */\n    case \'${1}\':\n      ${2:/* Your code here */}\n      break;\n  }\n}'

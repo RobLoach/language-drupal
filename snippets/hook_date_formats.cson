@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_date_formats':
+    'prefix': 'hook_date_formats'
+    'body': '/**\n * Implements hook_date_formats().\n */\nfunction $1_date_formats() {\n  return array(\n    /*\n     *array(\n     *  \'type\' => \'mymodule_extra_long\',\n     *  \'format\' => \'l jS F Y H:i:s e\',\n     *  \'locales\' => array(\'en-ie\'),\n     *),\n     */\n    array(\n      \'type\' => \'${1}\',\n      \'format\' => \'${2}\',\n      \'locales\' => array(\'${3}\'),\n    ),\n  );\n}'

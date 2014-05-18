@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_menu_breadcrumb_alter':
+    'prefix': 'h_menu_breadcrumb_alter'
+    'body': '/**\n * Implements hook_menu_breadcrumb_alter().\n */\nfunction $1_menu_breadcrumb_alter(&\$active_trail, \$item) {\n  ${1:/* Your code here */}\n}'

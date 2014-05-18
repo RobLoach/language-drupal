@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_user_view_alter':
+    'prefix': 'hook_user_view_alter'
+    'body': '/**\n * Implements hook_user_view_alter().\n */\nfunction $1_user_view_alter(&\$build) {\n  // Check for the existence of a field added by another module.\n  /*\n   *if (isset(\$build[\'an_additional_field\'])) {\n   *  // Change its weight.\n   *  \$build[\'an_additional_field\'][\'#weight\'] = -10;\n   *}\n   */\n  // Add a #post_render callback to act on the rendered HTML of the user.\n  /*\n   *\$build[\'#post_render\'][] = \'my_module_user_post_render\';\n   */\n  ${1:/* Your code here */}\n}'

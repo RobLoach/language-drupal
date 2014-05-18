@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_delete':
+    'prefix': 'hook_delete'
+    'body': '/**\n * Implements hook_delete().\n */\nfunction $1_delete(\$node) {\n  db_delete(\'${1}\')\n    ->condition(\'nid\', \$nid->nid)\n    ->execute();\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_formatter_view':
+    'prefix': 'h_field_formatter_view'
+    'body': '/**\n * Implements hook_field_formatter_view().\n */\nfunction $1_field_formatter_view(\$entity_type, \$entity, \$field, \$instance, \$langcode, \$items, \$display) {\n  \$element = array();\n  \$settings = \$display[\'settings\'];\n\n  switch (\$display[\'type\']) {\n    case \'${1}\':\n      foreach (\$items as \$delta => \$item) {\n        \$element[\$delta] = array(\n          \'#theme\' => \'${2}\',\n          \'#data\' => \$item[\'value\'],\n          \'#markup\' => ${3},\n          \'#${4}\' => \$settings[\'${5}\'],\n        );\n      }\n      break;\n  }\n\n  return \$element;\n}'

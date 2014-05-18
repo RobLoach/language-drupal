@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_page_build':
+    'prefix': 'h_page_build'
+    'body': '/**\n * Implements hook_page_build().\n */\nfunction $1_page_build(&\$page) {\n  \$page[\'${1}\'][\'${2}\'] = array(\n    \'#markup\' => t(\'${3}\'),\n    \'#weight\' => ${4},\n  );\n}'

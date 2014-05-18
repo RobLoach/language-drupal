@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_token_info_alter':
+    'prefix': 'h_token_info_alter'
+    'body': '/**\n * Implements hook_token_info_alter().\n */\nfunction $1_token_info_alter(&\$data) {\n  \$data[\'tokens\'][\'${1}\'][\'${2}\'] = array(\n    \'name\' => t("${3}"),\n    \'description\' => t("${4}"),\n  );\n}'

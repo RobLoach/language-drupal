@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_action_info':
+    'prefix': 'hook_action_info'
+    'body': '/**\n * Implements hook_action_info().\n */\nfunction $1_action_info() {\n  return array(\n    /*\n     *\'comment_unpublish_action\' => array(\n     *  \'type\' => \'comment\',\n     *  \'label\' => t(\'Unpublish comment\'),\n     *  \'configurable\' => FALSE,\n     *  \'behavior\' => array(\'changes_property\'),\n     *  \'triggers\' => array(\'comment_presave\', \'comment_insert\', \'comment_update\'),\n     *),\n     */\n    \'${1}\' => array(\n      \'type\' => \'${2}\',\n      \'label\' => t(\'${3}\'),\n      \'configurable\' => ${4},\n      \'behavior\' => array(\'${5}\'),\n      \'triggers\' => array(\'${6}\', ${7}),\n    ),\n  );\n}'

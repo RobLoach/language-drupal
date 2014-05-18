@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_theme_registry_alter':
+    'prefix': 'h_theme_registry_alter'
+    'body': '/**\n * Implements hook_theme_registry_alter().\n */\nfunction $1_theme_registry_alter(&\$theme_registry) {\n  ${1:/* Your code here */}\n}'

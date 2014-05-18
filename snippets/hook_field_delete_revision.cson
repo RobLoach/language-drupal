@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_delete_revision':
+    'prefix': 'hook_field_delete_revision'
+    'body': '/**\n * Implements hook_field_delete_revision().\n */\nfunction $1_field_delete_revision(\$entity_type, \$entity, \$field, \$instance, \$langcode, &\$items) {\n  foreach (\$items as \$delta => \$item) {\n    // For hook_file_references, remember that this file is being deleted.\n    /*\n     *\$item[\'file_field_name\'] = \$field[\'field_name\'];\n     *if (file_field_delete_file(\$item, \$field)) {\n     *  \$items[\$delta] = NULL;\n     *}\n     */\n    ${1:/* Your code here */}\n  }\n}'

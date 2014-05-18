@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_user_role_update':
+    'prefix': 'hook_user_role_update'
+    'body': '/**\n * Implements hook_user_role_update().\n */\nfunction $1_user_role_update(\$role) {\n  // Save extra fields provided by the module to user roles.\n  db_merge(\'${1}\')\n    ->key(array(\'rid\' => \$role->rid))\n    ->fields(array(\n      \'role_description\' => \$role->description\n    ))\n    ->execute();\n}'

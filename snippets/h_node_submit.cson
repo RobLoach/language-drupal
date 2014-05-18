@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_node_submit':
+    'prefix': 'h_node_submit'
+    'body': '/**\n * Implements hook_node_submit().\n */\nfunction $1_node_submit(\$node, \$form, &\$form_state) {\n  ${1:/* Your code here */}\n}'

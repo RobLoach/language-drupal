@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_comment_view':
+    'prefix': 'hook_comment_view'
+    'body': '/**\n * Implements hook_comment_view().\n */\nfunction $1_comment_view(\$comment, \$view_mode, \$langcode) {\n  // how old is the comment\n  /*\n   *\$comment->time_ago = time() - \$comment->changed;\n   */\n  ${1:/* Your code here */}\n}'

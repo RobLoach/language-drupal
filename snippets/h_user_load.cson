@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_user_load':
+    'prefix': 'h_user_load'
+    'body': '/**\n * Implements hook_user_load().\n */\nfunction $1_user_load(\$users) {\n  ${1:/* Your code here */}\n}'

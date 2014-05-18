@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_file_download_access_alter':
+    'prefix': 'hook_file_download_access_alter'
+    'body': '/**\n * Implements hook_file_download_access_alter().\n */\nfunction $1_file_download_access_alter(&\$grants, \$field, \$entity_type, \$entity) {\n  // For our example module, we always enforce the rules set by node module.\n  /*\n   *if (isset(\$grants[\'node\'])) {\n   *  \$grants = array(\'node\' => \$grants[\'node\']);\n   *}\n   */\n  ${1:/* Your code here */}\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_storage_pre_load':
+    'prefix': 'hook_field_storage_pre_load'
+    'body': '/**\n * Implements hook_field_storage_pre_load().\n */\nfunction $1_field_storage_pre_load(\$entity_type, \$entities, \$age, &\$skip_fields, \$options) {\n  ${1:/* Your code here */}\n}'

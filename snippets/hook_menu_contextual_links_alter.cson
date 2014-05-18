@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_menu_contextual_links_alter':
+    'prefix': 'hook_menu_contextual_links_alter'
+    'body': '/**\n * Implements hook_menu_contextual_links_alter().\n */\nfunction $1_menu_contextual_links_alter(&\$links, \$router_item, \$root_path) {\n  // Add a link to all contextual links for nodes.\n  /*\n   *if (\$root_path == \'node/%\') {\n   *  \$links[\'foo\'] = array(\n   *    \'title\' => t(\'Do fu\'),\n   *    \'href\' => \'foo/do\',\n   *    \'localized_options\' => array(\n   *      \'query\' => array(\n   *        \'foo\' => \'bar\',\n   *      ),\n   *    ),\n   *  );\n   *}\n   */\n  if (\$root_path == \'${1}\') {\n    \$links[\'${2}\'] = array(\n      \'title\' => t(\'${3}\'),\n      \'href\' => \'${4}\',\n      \'localized_options\' => array(\n        \'query\' => array(\n          \'${5}\' => \'${6}\',\n        ),\n      ),\n    );\n  }\n}'

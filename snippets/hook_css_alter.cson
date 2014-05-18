@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_css_alter':
+    'prefix': 'hook_css_alter'
+    'body': '/**\n * Implements hook_css_alter().\n */\nfunction $1_css_alter(&\$css) {\n  // Remove defaults.css file.\n  /*\n   *unset(\$css[drupal_get_path(\'module\', \'system\') . \'/defaults.css\']);\n   */\n  ${1:/* Your code here */}\n}'

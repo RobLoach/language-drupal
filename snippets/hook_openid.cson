@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_openid':
+    'prefix': 'hook_openid'
+    'body': '/**\n * Implements hook_openid().\n */\nfunction $1_openid(\$op, \$request) {\n  /*\n   *if (\$op == \'request\') {\n   *  \$request[\'openid.identity\'] = \'http://myname.myopenid.com/\';\n   *}\n   */\n  ${1:/* Your code here */}\n\n  return \$request;\n}'

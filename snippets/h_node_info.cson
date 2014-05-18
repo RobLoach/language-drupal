@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_node_info':
+    'prefix': 'h_node_info'
+    'body': '/**\n * Implements hook_node_info().\n */\nfunction $1_node_info() {\n  return array(\n    \'${1}\' => array(\n      \'name\' => t(\'${2}\'),\n      \'base\' => \'${3}\',\n      \'description\' => t(\'${4}\'),\n    )\n  );\n}'

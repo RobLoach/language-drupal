@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_library':
+    'prefix': 'h_library'
+    'body': '/**\n * Implements hook_library().\n */\nfunction $1_library() {\n  \$libraries[\'${1}\'] = array(\n    \'title\' => \'${2}\',\n    \'website\' => \'${3}\',\n    \'version\' => \'${4}\',\n    \'js\' => array(\n      drupal_get_path(\'module\', \'$1\') . \'/${5}\' => array(),\n    ),\n    \'css\' => array(\n      drupal_get_path(\'module\', \'$1\') . \'/${6}\' => array(\n        \'type\' => \'file\',\n        \'media\' => \'${7}\',\n      ),\n    ),\n    \'dependencies\' => array(\n      array(\'system\', \'ui\'),\n    ),\n  );\n  return \$libraries;\n}'

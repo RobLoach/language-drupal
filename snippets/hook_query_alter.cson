@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_query_alter':
+    'prefix': 'hook_query_alter'
+    'body': '/**\n * Implements hook_query_alter().\n */\nfunction $1_query_alter(QueryAlterableInterface \$query) {\n  if (\$query->hasTag(\'${1}\')) {\n    /*\n     *\$query->range(0, 2);\n     */\n    ${2:/* Your code here */}\n  }\n}'

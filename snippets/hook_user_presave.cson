@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_user_presave':
+    'prefix': 'hook_user_presave'
+    'body': '/**\n * Implements hook_user_presave().\n */\nfunction $1_user_presave(&\$edit, \$account, \$category) {\n  // make sure that our form value \'mymodule_foo\' is stored as \'mymodule_bar\'.\n  /*\n   *if (isset(\$edit[\'mymodule_foo\'])) {\n   *  \$edit[\'data\'][\'my_module_foo\'] = \$edit[\'my_module_foo\'];\n   *}\n   */\n  ${1:/* your code here */}\n}'

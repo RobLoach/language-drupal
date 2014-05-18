@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_storage_purge_field_instance':
+    'prefix': 'hook_field_storage_purge_field_instance'
+    'body': '/**\n * Implements hook_field_storage_purge_field_instance().\n */\nfunction $1_field_storage_purge_field_instance(\$instance) {\n  db_delete(\'${1}\')\n    ->condition(\'id\', \$instance[\'id\'])\n    ->execute();\n}'

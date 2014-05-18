@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_validate':
+    'prefix': 'h_field_validate'
+    'body': '/**\n * Implements hook_field_validate().\n */\nfunction $1_field_validate(\$entity_type, \$entity, \$field, \$instance, \$langcode, \$items, &\$errors) {\n  foreach (\$items as \$delta => \$item) {\n    if (!empty(\$item[\'value\'])) {\n      ${1:/* Your code here */}\n    }\n  }\n}'

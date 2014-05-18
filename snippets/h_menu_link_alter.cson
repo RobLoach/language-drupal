@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_menu_link_alter':
+    'prefix': 'h_menu_link_alter'
+    'body': '/**\n * Implements hook_menu_link_alter().\n */\nfunction $1_menu_link_alter(&\$item) {\n  ${1:/* Your code here */}\n}'

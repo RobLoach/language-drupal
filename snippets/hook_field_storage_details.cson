@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_storage_details':
+    'prefix': 'hook_field_storage_details'
+    'body': '/**\n * Implements hook_field_storage_details().\n */\nfunction $1_field_storage_details(\$field) {\n  \$details = array();\n\n  // Add field columns.\n  /*\n   *foreach ((array) \$field[\'columns\'] as \$column_name => \$attributes) {\n   *  \$real_name = _field_sql_storage_columnname(\$field[\'field_name\'], \$column_name);\n   *  \$columns[\$column_name] = \$real_name;\n   *}\n   *return array(\n   *  \'sql\' => array(\n   *    FIELD_LOAD_CURRENT => array(\n   *      _field_sql_storage_tablename(\$field) => \$columns,\n   *    ),\n   *    FIELD_LOAD_REVISION => array(\n   *      _field_sql_storage_revision_tablename(\$field) => \$columns,\n   *    ),\n   *  ),\n   *);\n   */\n  ${1:/* Your code here */}\n}'

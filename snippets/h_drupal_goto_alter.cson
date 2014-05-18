@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_drupal_goto_alter':
+    'prefix': 'h_drupal_goto_alter'
+    'body': '/**\n * Implements hook_drupal_goto_alter().\n */\nfunction $1_drupal_goto_alter(&\$path, &\$options, &\$http_response_code) {\n  ${1:/* Your code here */}\n}'

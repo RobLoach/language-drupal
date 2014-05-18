@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_uninstall':
+    'prefix': 'hook_uninstall'
+    'body': '/**\n * Implements hook_uninstall().\n */\nfunction $1_uninstall() {\n  /*\n   *variable_del(\'upload_file_types\');\n   */\n  variable_del(\'${1}\');\n}'

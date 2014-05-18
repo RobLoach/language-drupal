@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_comment_delete':
+    'prefix': 'hook_comment_delete'
+    'body': '/**\n * Implements hook_comment_delete().\n */\nfunction $1_comment_delete(\$comment) {\n  /*\n   *drupal_set_message(t(\'Comment: @subject has been deleted\', array(\'@subject\' => \$comment->subject)));\n   */\n  ${1:/* Your code here */}\n}'

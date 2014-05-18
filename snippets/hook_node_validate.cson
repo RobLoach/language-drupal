@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_node_validate':
+    'prefix': 'hook_node_validate'
+    'body': '/**\n * Implements hook_node_validate().\n */\nfunction $1_node_validate(\$node, \$form, &\$form_state) {\n  /*\n   *if (isset(\$node->end) && isset(\$node->start)) {\n   *  if (\$node->start > \$node->end) {\n   *    form_set_error(\'time\', t(\'An event may not end before it starts.\'));\n   *  }\n   *}\n   */\n  ${1:/* Your code here */}\n}'

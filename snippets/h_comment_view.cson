@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_comment_view':
+    'prefix': 'h_comment_view'
+    'body': '/**\n * Implements hook_comment_view().\n */\nfunction $1_comment_view(\$comment, \$view_mode, \$langcode) {\n  ${1:/* Your code here */}\n}'

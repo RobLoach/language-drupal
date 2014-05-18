@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_trigger_info_alter':
+    'prefix': 'h_trigger_info_alter'
+    'body': '/**\n * Implements hook_trigger_info_alter().\n */\nfunction $1_trigger_info_alter(&\$triggers) {\n  ${1:/* Your code here */}\n}'

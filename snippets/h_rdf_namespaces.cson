@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_rdf_namespaces':
+    'prefix': 'h_rdf_namespaces'
+    'body': '/**\n * Implements hook_rdf_namespaces().\n */\nfunction $1_rdf_namespaces() {\n  return array(\n    \'${1}\'  => \'${2}\',\n  );\n}'

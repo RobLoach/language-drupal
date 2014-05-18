@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_user_update':
+    'prefix': 'hook_user_update'
+    'body': '/**\n * Implements hook_user_update().\n */\nfunction $1_user_update(&\$edit, \$account, \$category) {\n  db_insert(\'${1}\')\n    ->fields(array(\n      \'uid\' => \$account->uid,\n      \'changed\' => time(),\n    ))\n    ->execute();\n}'

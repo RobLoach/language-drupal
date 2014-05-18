@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_admin_paths_alter':
+    'prefix': 'h_admin_paths_alter'
+    'body': '/**\n * Implements hook_admin_paths_alter().\n */\nfunction $1_admin_paths_alter(&\$paths) {\n  \$paths[\'${1}\'] = ${2};\n}'

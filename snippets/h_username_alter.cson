@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_username_alter':
+    'prefix': 'h_username_alter'
+    'body': '/**\n * Implements hook_username_alter().\n */\nfunction $1_username_alter(&\$name, \$account) {\n  ${1:/* Your code here */}\n}'

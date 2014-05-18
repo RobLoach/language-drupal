@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_tokens($type,':
+    'prefix': 'h_tokens(\$type,'
+    'body': '/**\n * Implements hook_tokens(\$type, \$tokens, array \$data = array(), array \$options = array().\n */\nfunction $1_tokens(\$type, \$tokens, array \$data = array(), array \$options = array()) {\n  \$replacements = array();\n  ${1:/* Your code here */}\n\n  return \$replacements;\n}'

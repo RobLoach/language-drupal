@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_is_empty':
+    'prefix': 'hook_field_is_empty'
+    'body': '/**\n * Implements hook_field_is_empty().\n */\nfunction $1_field_is_empty(\$item, \$field) {\n  /*\n   *if (empty(\$item[\'value\']) && (string) \$item[\'value\'] !== \'0\') {\n   *  return TRUE;\n   *}\n   *return FALSE;\n   */\n  ${1:/* Your code here */}\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_dashboard_regions':
+    'prefix': 'h_dashboard_regions'
+    'body': '/**\n * Implements hook_dashboard_regions().\n */\nfunction $1_dashboard_regions() {\n  ${1:/* Your code here */}\n}'

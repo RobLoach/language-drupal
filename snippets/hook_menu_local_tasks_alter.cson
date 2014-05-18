@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_menu_local_tasks_alter':
+    'prefix': 'hook_menu_local_tasks_alter'
+    'body': '/**\n * Implements hook_menu_local_tasks_alter().\n */\nfunction $1_menu_local_tasks_alter(&\$data, \$router_item, \$root_path) {\n  // Add an action to all pages.\n  // \$data[\'actions\'][\'output\'][] = array(\n  //\n  // Add a tab to all pages.\n  /*\n   *\$data[\'tabs\'][0][\'output\'][] = array(\n   *  \'#theme\' => \'menu_local_task\',\n   *  \'#link\' => array(\n   *    \'title\' => t(\'${1}\'),\n   *    \'href\' => \'${2}\',\n   *    \'localized_options\' => array(\n   *      \'attributes\' => array(\n   *        \'title\' => t(\'${3}\'),\n   *      ),\n   *    ),\n   *  ),\n   *  // Define whether this link is active. This can be omitted for\n   *  // implementations that add links to pages outside of the current page\n   *  // context.\n   *  \'#active\' => (\$router_item[\'path\'] == \$root_path),\n   *);\n   */\n  ${1:/* Your code here */}\n}'

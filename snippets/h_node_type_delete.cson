@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_node_type_delete':
+    'prefix': 'h_node_type_delete'
+    'body': '/**\n * Implements hook_node_type_delete().\n */\nfunction $1_node_type_delete(\$info) {\n  ${1:/* Your code here */}\n}'

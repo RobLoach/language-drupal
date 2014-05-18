@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_contextual_links_view_alter':
+    'prefix': 'hook_contextual_links_view_alter'
+    'body': '/**\n * Implements hook_contextual_links_view_alter().\n */\nfunction $1_contextual_links_view_alter(&\$element, \$items) {\n  // Add another class to all contextual link lists to facilitate custom\n  // styling.\n  /*\n   *\$element[\'#attributes\'][\'class\'][] = \'custom-class\';\n   */\n  ${1:/* Your code here */}\n}'

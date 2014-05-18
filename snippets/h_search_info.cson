@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_search_info':
+    'prefix': 'h_search_info'
+    'body': '/**\n * Implements hook_search_info().\n */\nfunction $1_search_info() {\n  return array(\n    \'title\' => \'${1}\',\n    \'path\' => \'${2}\',\n    \'conditions_callback\' => \'${3}\',\n  );\n}'

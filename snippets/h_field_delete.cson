@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_delete':
+    'prefix': 'h_field_delete'
+    'body': '/**\n * Implements hook_field_delete().\n */\nfunction $1_field_delete(\$entity_type, \$entity, \$field, \$instance, \$langcode, &\$items) {\n  list(\$id, \$vid, \$bundle) = entity_extract_ids(\$entity_type, \$entity);\n  foreach (\$items as \$delta => \$item) {\n    ${1:/* Your code here */}\n  }\n}'

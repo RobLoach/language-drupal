@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_modules_disabled':
+    'prefix': 'hook_modules_disabled'
+    'body': '/**\n * Implements hook_modules_disabled().\n */\nfunction $1_modules_disabled(\$modules) {\n  /*\n   *if (in_array(\'lousy_module\', \$modules)) {\n   *  mymodule_enable_functionality();\n   *}\n   */\n  ${1:/* Your code here */}\n}'

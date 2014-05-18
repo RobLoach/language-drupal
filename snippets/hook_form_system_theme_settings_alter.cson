@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_form_system_theme_settings_alter':
+    'prefix': 'hook_form_system_theme_settings_alter'
+    'body': '/**\n * Implements hook_form_system_theme_settings_alter().\n */\nfunction $1_form_system_theme_settings_alter(&\$form, &\$form_state) {\n  // Add a checkbox to toggle the breadcrumb trail.\n  /*\n   *\$form[\'toggle_breadcrumb\'] = array(\n   *  \'#type\' => \'checkbox\',\n   *  \'#title\' => t(\'Display the breadcrumb\'),\n   *  \'#default_value\' => theme_get_setting(\'toggle_breadcrumb\'),\n   *  \'#description\'   => t(\'Show a trail of links from the homepage to the current page.\'),\n   *);\n   */\n  \$form[\'${1}\']${2} = array(\n    \'#type\' => \'${3}\',\n    \'#title\' => t(\'${4}\'),\n    \'#default_value\' => theme_get_setting(\'${5}\'),\n    \'#description\'   => t(\'${6}\'),${7}\n  );\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_attach_update':
+    'prefix': 'h_field_attach_update'
+    'body': '/**\n * Implements hook_field_attach_update().\n */\nfunction $1_field_attach_update(\$entity_type, \$entity) {\n  ${1:/* Your code here */}\n}'

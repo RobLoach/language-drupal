@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_image_effect_info_alter':
+    'prefix': 'h_image_effect_info_alter'
+    'body': '/**\n * Implements hook_image_effect_info_alter().\n */\nfunction $1_image_effect_info_alter(&\$effects) {\n  ${1:/* Your code here */}\n}'

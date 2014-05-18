@@ -1,0 +1,4 @@
+'.text.drupal':
+  'mi':
+    'prefix': 'mi'
+    'body': '\$items[\'${1}\'] = array(\n\t\'title\' => \'${2}\',\n\t\'page callback\' => \'${3}\',\n\t\'page arguments\' => array(\'${4}\'),\n\t\'access arguments\' => array(\'${5}\'),\n\t\'type\' => ${6},\n\t\'file\' => ${7},${8}\n);'

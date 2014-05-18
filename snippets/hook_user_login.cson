@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_user_login':
+    'prefix': 'hook_user_login'
+    'body': '/**\n * Implements hook_user_login().\n */\nfunction $1_user_login(&\$edit, \$account) {\n  // If the user has a NULL time zone, notify them to set a time zone.\n  /*\n   *if (!\$user->timezone && variable_get(\'configurable_timezones\', 1) && variable_get(\'empty_timezone_message\', 0)) {\n   *  drupal_set_message(t(\'Configure your <a href="@user-edit">account time zone setting</a>.\', array(\'@user-edit\' => url("user/\$user->uid/edit", array(\'query\' => drupal_get_destination(), \'fragment\' => \'edit-timezone\')))));\n   *}\n   */\n  ${1:/* Your code here */}\n}'

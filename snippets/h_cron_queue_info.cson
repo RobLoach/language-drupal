@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_cron_queue_info':
+    'prefix': 'h_cron_queue_info'
+    'body': '/**\n * Implements hook_cron_queue_info().\n */\nfunction $1_cron_queue_info() {\n  \$queues[\'${1}\'] = array(\n    \'worker callback\' => \'${2}\',\n    \'time\' => ${3},\n  );\n  return \$queues;\n}'

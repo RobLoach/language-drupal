@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_field_attach_rename_bundle':
+    'prefix': 'h_field_attach_rename_bundle'
+    'body': '/**\n * Implements hook_field_attach_rename_bundle().\n */\nfunction $1_field_attach_rename_bundle(\$entity_type, \$bundle_old, \$bundle_new) {\n  ${1:/* Your code here */}\n}'

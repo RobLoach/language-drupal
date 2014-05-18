@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_menu_contextual_links_alter':
+    'prefix': 'h_menu_contextual_links_alter'
+    'body': '/**\n * Implements hook_menu_contextual_links_alter().\n */\nfunction $1_menu_contextual_links_alter(&\$links, \$router_item, \$root_path) {\n  if (\$root_path == \'${1}\') {\n    \$links[\'${2}\'] = array(\n      \'title\' => t(\'${3}\'),\n      \'href\' => \'${4}\',\n      \'localized_options\' => array(\n        \'query\' => array(\n          \'${5}\' => \'${6}\',\n        ),\n      ),\n    );\n  }\n}'

@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_cron':
+    'prefix': 'h_cron'
+    'body': '/**\n * Implements hook_cron().\n */\nfunction $1_cron() {\n   ${1:/* Your code here */}\n}'

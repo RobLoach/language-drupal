@@ -1,0 +1,4 @@
+'.text.drupal':
+  'hook_field_attach_delete_bundle':
+    'prefix': 'hook_field_attach_delete_bundle'
+    'body': '/**\n * Implements hook_field_attach_delete_bundle().\n */\nfunction $1_field_attach_delete_bundle(\$entity_type, \$bundle, \$instances) {\n  // Remove the extra weights variable information for this bundle.\n  /*\n   *\$extra_weights = variable_get(\'field_extra_weights\', array());\n   *if (isset(\$extra_weights[\$entity_type][\$bundle])) {\n   *  unset(\$extra_weights[\$entity_type][\$bundle]);\n   *  variable_set(\'field_extra_weights\', \$extra_weights);\n   *}\n   */\n  ${1:/* Your code here */}\n}'

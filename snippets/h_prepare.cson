@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_prepare':
+    'prefix': 'h_prepare'
+    'body': '/**\n * Implements hook_prepare().\n */\nfunction $1_prepare(\$node) {\n  ${1:/* Your code here */}\n}'

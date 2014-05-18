@@ -1,0 +1,4 @@
+'.text.drupal':
+  'h_image_style_save':
+    'prefix': 'h_image_style_save'
+    'body': '/**\n * Implements hook_image_style_save().\n */\nfunction $1_image_style_save(\$style) {\n  ${1:/* Your code here */}\n}'
