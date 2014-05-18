@@ -5,12 +5,7 @@
 
 <!-- /TITLE -->
 
-
-<!-- DESCRIPTION/ -->
-
 [Drupal](http://drupal.org) syntax highlighting and snippets for Atom.
-
-<!-- /DESCRIPTION -->
 
 
 ## Install
@@ -80,5 +75,3 @@ Licensed under the incredibly [permissive](http://en.wikipedia.org/wiki/Permissi
 Copyright &copy; 2014+ Rob Loach (http://robloach.net)
 
 <!-- /LICENSE -->
-
-
