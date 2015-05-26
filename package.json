@@ -1,7 +1,7 @@
 {
   "title": "Drupal support in Atom",
   "name": "language-drupal",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Drupal syntax highlighting and snippets for Atom.",
   "keywords": [
     "Drupal",
